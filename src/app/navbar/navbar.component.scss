@@ -1,1 +1,16 @@
 @import '../common/colors';
+
+nav.bg-dark{
+  background-color: $nav-color !important;
+}
+
+button.btn-outline-danger{
+  color: $red;
+  border-color: $red;
+  font-weight: bold;
+}
+button.btn-outline-danger:hover{
+  background-color: $red;
+  color: white;
+}
+
