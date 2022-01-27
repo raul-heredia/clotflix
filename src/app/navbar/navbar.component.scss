@@ -3,14 +3,28 @@
 nav.bg-dark{
   background-color: $nav-color !important;
 }
-
-button.btn-outline-danger{
+button i.bi-search:hover{
   color: $red;
-  border-color: $red;
-  font-weight: bold;
 }
-button.btn-outline-danger:hover{
-  background-color: $red;
-  color: white;
+input[type="search"]{
+  background-color: $grey;
+  border: none;
+  border-radius: $medium-radius;
+}
+input[type="search"]::placeholder{
+  color: #000000;
+}
+i.bi{
+  color: $grey;
 }
 
+.form-control:focus, .form-control:active{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+}
+
+.btn:focus,.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
