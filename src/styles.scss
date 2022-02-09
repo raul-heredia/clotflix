@@ -6,3 +6,13 @@ body
   background: $bg-color;
   color: $grey
 }
+
+a{
+  color: $red;
+  text-decoration: none;
+}
+
+a:hover{
+  color: $red;
+  text-decoration: underline;
+}

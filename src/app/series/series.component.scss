@@ -1,1 +1,11 @@
 @import '../common/colors';
+
+.card, .list-group-item{
+  background-color: lighten($bg-color, 8) !important;
+  color: $grey;
+}
+
+.d-flex{
+  margin: 10px;
+  gap: 7px;
+}
