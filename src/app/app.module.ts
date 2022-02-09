@@ -4,17 +4,24 @@ import { AppRoutingModule } from './app-routing.module';
 // COMPONENTS
 import { NavbarComponent } from './navbar/navbar.component';
 import { SeriesComponent } from './series/series.component';
+import { MainComponent } from './main/main.component';
+import { PeliculasComponent } from './peliculas/peliculas.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 @NgModule({
   declarations: [
+    MainComponent,
     NavbarComponent,
-    SeriesComponent
+    SeriesComponent,
+    MainComponent,
+    PeliculasComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [NavbarComponent]
+  bootstrap: [MainComponent]
 })
 export class AppModule { }
