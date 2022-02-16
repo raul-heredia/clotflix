@@ -1,48 +1,63 @@
-<div class="d-flex align-items-stretch">
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="https://i.ytimg.com/vi/V5kEl1IQH1k/maxresdefault.jpg" alt="Card image cap">
+<div class="d-flex align-items-stretch flex-wrap">
+  <div class="card" style="width: 18rem;" *ngFor="let card of series">
+    <img class="card-img-top" src="{{card.imagen}}" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-        content.
-      </p>
+      <h5 class="card-title">{{card.nombre}}</h5>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">Cras justo odio</li>
-      <li class="list-group-item">Dapibus ac facilisis in</li>
-      <li class="list-group-item">Vestibulum at eros</li>
+      <li class="list-group-item"><span>Valoración:</span> {{card.valoracion}}/10</li>
+      <li class="list-group-item"><span>Director:</span> {{card.director}}</li>
+      <li class="list-group-item"><span>Protagonistas:</span> {{card.protagonistas}}</li>
+      <li class="list-group-item"><span>Plataforma:</span> {{card.plataforma}}</li>
     </ul>
-    <div class="card-body">
-      <a class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Card link</a>
-
-      <a class="card-link">Another link</a>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-        Launch demo modal
+    <div class="card-body bottom">
+      <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+        [attr.data-bs-target]="'#' + card.modalId">
+        Más Información
       </button>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal fade" id="{{card.modalId}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            <h5 class="modal-title" id="exampleModalLabel">{{card.nombre}}</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h5 class="modal-title">Sinopsis:</h5>
+                  <p class="modal-p">{{card.sinopsis}}</p>
+                </div>
+                <div class="col">
+                  <h5 class="modal-title">Detalles </h5>
+                  <div class="row">
+                    <div class="col">
+                      <p class="modal-p"><span>Director:</span> {{card.director}}</p>
+                    </div>
+                    <div class="col">
+                      <p class="modal-p"><span>Protagonistas:</span> {{card.protagonistas}}</p>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                      <p class="modal-p"><span>Plataforma:</span> {{card.plataforma}}</p>
+                    </div>
+                    <div class="col">
+                      <p class="modal-p"><span>Productora:</span> {{card.productora}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="trailer">
+                    <img src="{{card.imagen}}" width="100%" alt="Card image cap">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-<script>
-
-</script>

@@ -9,3 +9,39 @@
   margin: 10px;
   gap: 7px;
 }
+.list-group-item > span, .modal-p>span{
+  color: $darkRed;
+  font-weight: bold;
+}
+.card-body.bottom{
+  margin: 0 auto;
+}
+
+.card-body > button{
+  background-color: $darkRed;
+  color: $grey;
+}
+
+.trailer img{
+  border-radius: 4px;
+}
+
+.modal-title, modal-p{
+  color: $grey;
+}
+.modal-content{
+  background-color: $bg-color;
+}
+.modal-p{
+  text-align: justify;
+}
+button.btn-close{
+  color: $grey !important;
+}
+button.btn-close:hover{
+  color: $darkRed;
+}
+.modal-title{
+  color: $darkRed;
+  font-weight: bold;
+}

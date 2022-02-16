@@ -16,3 +16,22 @@ a:hover{
   color: $red;
   text-decoration: underline;
 }
+
+button:focus, button:active{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+}
+
+button:focus, button:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+button:focus, a:focus{
+  outline: none;
+}
+.navbar-toggler:focus{
+  outline: none !important;
+  box-shadow: none;
+}
