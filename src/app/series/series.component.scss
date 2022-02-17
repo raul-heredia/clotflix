@@ -9,7 +9,7 @@
   margin: 10px;
   gap: 7px;
 }
-.list-group-item > span{
+.list-group-item > span, .card-title{
   color: $lightGrey;
   font-weight: bold;
 }
