@@ -1,1 +1,68 @@
-<p>peliculas works!</p>
+<div class="d-flex align-items-stretch justify-content-center flex-wrap">
+  <div class="card" style="width: 18rem;" *ngFor="let pelicula of peliculas">
+    <img class="card-img-top" src="{{pelicula.imagen}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{pelicula.nombre}}</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><span>Valoración:</span> {{pelicula.valoracion}}/10</li>
+      <li class="list-group-item"><span>Director:</span> {{pelicula.director}}</li>
+      <li class="list-group-item"><span>Protagonistas:</span> {{pelicula.protagonistas}}</li>
+      <li class="list-group-item"><span>Plataforma:</span> {{pelicula.plataforma}}</li>
+    </ul>
+    <div class="card-body bottom">
+      <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+        [attr.data-bs-target]="'#' + pelicula.modalId">
+        Más Información
+      </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="{{pelicula.modalId}}" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">{{pelicula.nombre}}</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h5 class="modal-title">Sinopsis:</h5>
+                  <p class="modal-p sinopsis">{{pelicula.sinopsis}}</p>
+                </div>
+                <div class="col">
+                  <h5 class="modal-title">Detalles </h5>
+                  <div class="row">
+                    <div class="col">
+                      <p class="modal-p"><span>Director:</span> {{pelicula.director}}</p>
+                    </div>
+                    <div class="col">
+                      <p class="modal-p"><span>Protagonistas:</span> {{pelicula.protagonistas}}
+                      </p>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                      <p class="modal-p"><span>Plataforma:</span> {{pelicula.plataforma}}</p>
+                    </div>
+                    <div class="col">
+                      <p class="modal-p"><span>Productora:</span> {{pelicula.productora}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="trailer embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" [src]="pelicula.youtube | safe" width="100%" height="100%"
+                      title='YouTube video player' frameborder='0'
+                      allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

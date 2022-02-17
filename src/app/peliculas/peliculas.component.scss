@@ -1,0 +1,58 @@
+@import '../common/colors';
+
+.card, .list-group-item{
+  background-color: lighten($bg-color, 8) !important;
+  color: $grey;
+}
+
+.d-flex{
+  margin: 10px;
+  gap: 7px;
+}
+.list-group-item > span, .card-title{
+  color: $lightGrey;
+  font-weight: bold;
+}
+.modal-p>span{
+  color: $darkRed;
+  font-weight: bold;
+}
+.card-body.bottom{
+  margin: 0 auto;
+}
+
+.card-body > button{
+  background-color: $darkRed;
+  color: $grey;
+}
+
+.trailer{
+  width: 100%;
+  height: 610px;
+}
+
+.trailer > iframe{
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-title, modal-p{
+  color: $grey;
+}
+.modal-content{
+  background-color: $bg-color;
+}
+.modal-p.sinopsis{
+  text-align: justify;
+}
+button.btn-close{
+  color: $grey !important;
+}
+button.btn-close:hover{
+  color: $darkRed;
+}
+.modal-title{
+  color: $darkRed;
+  font-weight: bold;
+}

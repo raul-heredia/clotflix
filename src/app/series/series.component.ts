@@ -29,7 +29,7 @@ export class SeriesComponent implements OnInit {
     "director": "Steven Knight",
     "productora": "BBC Studios",
     "protagonistas": "Cillian Murphy",
-    "imagen": "assets/images/series/peaky-blinders.jpg",
+    "imagen": "assets/images/series/peakyBlinders.jpg",
     "modalId": "peakyBlinders"
     },
     {
@@ -41,7 +41,7 @@ export class SeriesComponent implements OnInit {
       "director": "Vince Gilligan",
       "productora": "High Bridge Entertainment",
       "protagonistas": "Bryan Cranston",
-      "imagen": "assets/images/series/breaking-bad.jpg",
+      "imagen": "assets/images/series/breakingBad.jpg",
       "modalId": "breakingBad"
       },
       {
