@@ -57,6 +57,18 @@ export class SeriesComponent implements OnInit {
       "modalId": "starTrekDiscovery"
       },
       {
+      "nombre": "Lucifer",
+      "sinopsis": "Lucifer Morningstar ha decidido que está harto de ser un sirviente obediente en el Infierno y decide pasar un tiempo en la Tierra para entender mejor a la humanidad. Se instala en Los Ángeles, la ciudad de los ángeles.",
+      "valoracion": 9.2,
+      "youtube": "https://www.youtube.com/embed/X4bF_quwNtw",
+      "plataforma": "Netflix",
+      "director": "Tom Kapinos",
+      "productora": "DC Entertainment",
+      "protagonistas": "Tom Ellis",
+      "imagen": "assets/images/series/lucifer.jpg",
+      "modalId": "lucifer"
+      },
+      {
       "nombre": "Reacher",
       "sinopsis": "Cuando el policía militar retirado Jack Reacher es arrestado por un asesinato que no cometió, se encuentra en medio de una conspiración mortal llena de policías sucios, empresarios turbios y políticos intrigantes.",
       "valoracion": 8.4,
@@ -115,6 +127,18 @@ export class SeriesComponent implements OnInit {
       "protagonistas": "Taylor Kinney",
       "imagen": "assets/images/series/chicagoFire.jpg",
       "modalId": "chicagoFire"
+      },
+      {
+      "nombre": "Loki",
+      "sinopsis": "El villano Loki retoma su papel de Dios del Engaño tras los acontecimientos de \"Vengadores: Endgame\".",
+      "valoracion": 8.3,
+      "youtube": "https://www.youtube.com/embed/qeWaLxZa0vc",
+      "plataforma": "Disney +",
+      "director": "Michael Waldron",
+      "productora": "Marvel Studios",
+      "protagonistas": "Tom Hiddleston",
+      "imagen": "assets/images/series/loki.jpg",
+      "modalId": "loki"
       },
       {
       "nombre": "Suits: La clave del éxito",
