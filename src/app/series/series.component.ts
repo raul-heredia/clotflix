@@ -52,7 +52,7 @@ export class SeriesComponent implements OnInit {
       "plataforma": "Paramount +, Pluto TV",
       "director": "Bryan Fuller",
       "productora": "CBS Studios",
-      "protagonistas": "Sonequa Martin-Green",
+      "protagonistas": "S. Martin-Green",
       "imagen": "assets/images/series/starTrekDiscovery.jpg",
       "modalId": "starTrekDiscovery"
       },
@@ -109,7 +109,7 @@ export class SeriesComponent implements OnInit {
       "sinopsis": "La historia de los bomberos en Chicago, tanto a nivel personal como profesional.",
       "valoracion": 8.0,
       "youtube": "https://www.youtube.com/embed/IIeSDILTE5M",
-      "plataforma": "Amazon Prime Video, Movistar +",
+      "plataforma": "Movistar +",
       "director": "Michael Brandt",
       "productora": "CBS Studios",
       "protagonistas": "Taylor Kinney",
@@ -139,18 +139,6 @@ export class SeriesComponent implements OnInit {
       "protagonistas": "Lee Jung-jae",
       "imagen": "assets/images/series/squidGame.jpg",
       "modalId": "squidGame"
-      },
-      {
-      "nombre": "The Good Doctor",
-      "sinopsis": "Shaun Murphy, un joven cirujano con autismo y síndrome de Savant, es empleado por la unidad quirúrgica de un prestigioso hospital.",
-      "valoracion": 8.1,
-      "youtube": "https://www.youtube.com/embed/xsIFtGfAJ14",
-      "plataforma": "Netflix, Amazon Prime Video, Movistar +",
-      "director": "David Shore",
-      "productora": "EnterMedia Content",
-      "protagonistas": "Freddie Highmore",
-      "imagen": "assets/images/series/goodDoctor.jpg",
-      "modalId": "goodDoctor"
       }
   ];
   constructor() { }
