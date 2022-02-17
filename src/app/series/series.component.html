@@ -52,8 +52,11 @@
               </div>
               <div class="row">
                 <div class="col">
-                  <div class="trailer">
-                    <img src="{{card.imagen}}" width="100%" alt="Card image cap">
+                  <div class="trailer embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" [src]="card.youtube | safe" width="100%" height="100%"
+                      title='YouTube video player' frameborder='0'
+                      allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                      allowfullscreen></iframe>
                   </div>
                 </div>
               </div>

@@ -7,6 +7,7 @@ import { SeriesComponent } from './series/series.component';
 import { MainComponent } from './main/main.component';
 import { PeliculasComponent } from './peliculas/peliculas.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { SafePipe } from './safe.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { InicioComponent } from './inicio/inicio.component';
     SeriesComponent,
     MainComponent,
     PeliculasComponent,
-    InicioComponent
+    InicioComponent,
+    SafePipe,
   ],
   imports: [
     BrowserModule,

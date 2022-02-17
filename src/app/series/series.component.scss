@@ -26,8 +26,15 @@
   color: $grey;
 }
 
-.trailer img{
+.trailer{
+  width: 100%;
+  height: 610px;
+}
+
+.trailer > iframe{
   border-radius: 4px;
+  width: 100%;
+  height: 100%;
 }
 
 .modal-title, modal-p{
