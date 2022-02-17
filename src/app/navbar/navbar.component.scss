@@ -28,3 +28,13 @@ i.bi{
   outline: none !important;
   box-shadow: none;
 }
+a.nav-link.active{
+  color: $red !important;
+}
+a.nav-link{
+  color: darken($grey,6) !important;
+}
+a.nav-link:hover{
+  text-decoration: none;
+  color: $darkRed !important;
+}

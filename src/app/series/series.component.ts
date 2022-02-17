@@ -141,7 +141,7 @@ export class SeriesComponent implements OnInit {
       "modalId": "loki"
       },
       {
-      "nombre": "Suits: La clave del éxito",
+      "nombre": "Suits: La Clave Del Éxito",
       "sinopsis": "A la fuga después de que un negocio de drogas saliera mal, Mike Ross, un hombre brillante a pesar de no haber acabado sus estudios, se encuentra trabajando con Harvey Specter, uno de los mejores abogados de la ciudad de Nueva York.",
       "valoracion": 8.4,
       "youtube": "https://www.youtube.com/embed/cUnkjEIW2-o",
@@ -153,7 +153,7 @@ export class SeriesComponent implements OnInit {
       "modalId": "suits"
       },
       {
-      "nombre": "El juego del calamar",
+      "nombre": "El Juego Del Calamar",
       "sinopsis": "456 participantes desesperados compiten en un misterioso y mortífero concurso de supervivencia compuesto de varias rondas de juegos infantiles. ¿La meta? Ganar 45.600 millones de wones y salir de la miseria.",
       "valoracion": 8.0,
       "youtube": "https://www.youtube.com/embed/oqxAJKy0ii4",
