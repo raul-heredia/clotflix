@@ -103,6 +103,54 @@ export class SeriesComponent implements OnInit {
       "protagonistas": "Patrick Stewart",
       "imagen": "assets/images/series/starTrekPicard.jpg",
       "modalId": "starTrekPicard"
+      },
+      {
+      "nombre": "Chicago Fire",
+      "sinopsis": "La historia de los bomberos en Chicago, tanto a nivel personal como profesional.",
+      "valoracion": 8.0,
+      "youtube": "https://www.youtube.com/embed/IIeSDILTE5M",
+      "plataforma": "Amazon Prime Video, Movistar +",
+      "director": "Michael Brandt",
+      "productora": "CBS Studios",
+      "protagonistas": "Taylor Kinney",
+      "imagen": "assets/images/series/chicagoFire.jpg",
+      "modalId": "chicagoFire"
+      },
+      {
+      "nombre": "Suits: La clave del éxito",
+      "sinopsis": "A la fuga después de que un negocio de drogas saliera mal, Mike Ross, un hombre brillante a pesar de no haber acabado sus estudios, se encuentra trabajando con Harvey Specter, uno de los mejores abogados de la ciudad de Nueva York.",
+      "valoracion": 8.4,
+      "youtube": "https://www.youtube.com/embed/cUnkjEIW2-o",
+      "plataforma": "Netflix",
+      "director": "Aaron Korsh",
+      "productora": "USA Network",
+      "protagonistas": "Gabriel Macht",
+      "imagen": "assets/images/series/suits.jpg",
+      "modalId": "suits"
+      },
+      {
+      "nombre": "El juego del calamar",
+      "sinopsis": "456 participantes desesperados compiten en un misterioso y mortífero concurso de supervivencia compuesto de varias rondas de juegos infantiles. ¿La meta? Ganar 45.600 millones de wones y salir de la miseria.",
+      "valoracion": 8.0,
+      "youtube": "https://www.youtube.com/embed/oqxAJKy0ii4",
+      "plataforma": "Netflix",
+      "director": "Hwang Dong-hyuk",
+      "productora": "Siren Pictures Inc.",
+      "protagonistas": "Lee Jung-jae",
+      "imagen": "assets/images/series/squidGame.jpg",
+      "modalId": "squidGame"
+      },
+      {
+      "nombre": "The Good Doctor",
+      "sinopsis": "Shaun Murphy, un joven cirujano con autismo y síndrome de Savant, es empleado por la unidad quirúrgica de un prestigioso hospital.",
+      "valoracion": 8.1,
+      "youtube": "https://www.youtube.com/embed/xsIFtGfAJ14",
+      "plataforma": "Netflix, Amazon Prime Video, Movistar +",
+      "director": "David Shore",
+      "productora": "EnterMedia Content",
+      "protagonistas": "Freddie Highmore",
+      "imagen": "assets/images/series/goodDoctor.jpg",
+      "modalId": "goodDoctor"
       }
   ];
   constructor() { }
