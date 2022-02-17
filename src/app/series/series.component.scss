@@ -9,7 +9,11 @@
   margin: 10px;
   gap: 7px;
 }
-.list-group-item > span, .modal-p>span{
+.list-group-item > span{
+  color: $lightGrey;
+  font-weight: bold;
+}
+.modal-p>span{
   color: $darkRed;
   font-weight: bold;
 }
@@ -32,7 +36,7 @@
 .modal-content{
   background-color: $bg-color;
 }
-.modal-p{
+.modal-p.sinopsis{
   text-align: justify;
 }
 button.btn-close{
