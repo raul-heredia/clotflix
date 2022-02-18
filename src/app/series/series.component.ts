@@ -69,6 +69,18 @@ export class SeriesComponent implements OnInit {
       "modalId": "lucifer"
       },
       {
+      "nombre": "Star Wars: The Clone Wars",
+      "sinopsis": "Yoda, Mace Windu, Obi-Wan Kenobi, Anakin Skywalker y otros caballeros jedi dirigen el gran ejército de la República contra el ejército droide de los Separatistas.",
+      "valoracion": 8.7,
+      "youtube": "https://www.youtube.com/embed/ZLW2jkd6E7g",
+      "plataforma": "Disney +",
+      "director": "Dave Filoni",
+      "productora": "Lucasfilm",
+      "protagonistas": "Anakin Skywalker",
+      "imagen": "assets/images/series/cloneWars.jpg",
+      "modalId": "cloneWars"
+      },
+      {
       "nombre": "Reacher",
       "sinopsis": "Cuando el policía militar retirado Jack Reacher es arrestado por un asesinato que no cometió, se encuentra en medio de una conspiración mortal llena de policías sucios, empresarios turbios y políticos intrigantes.",
       "valoracion": 8.4,
