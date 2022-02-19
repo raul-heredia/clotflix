@@ -52,7 +52,7 @@
     jQuery('.modal').on('hidden.bs.modal', function () {
       let idModalClicked = this.id;
       console.log(idModalClicked)
-      jQuery(".modal iframe").attr("src", jQuery(`${idModalClicked} iframe`).attr("src"));
+      jQuery(`#${idModalClicked} iframe`).attr("src", jQuery(`#${idModalClicked} iframe`).attr("src"));
     });
   }
 </script>
