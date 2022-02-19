@@ -6,6 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./peliculas.component.scss']
 })
 export class PeliculasComponent implements OnInit {
+  selectFiltroPelicula: any = "!"; // la seleccion del filtro, por defecto es como viene ordenado en el array series
+  filter = {
+    nombreAsc: "nombre",
+    nombreDesc: "!nombre",
+    valoracionAsc: "valoracion",
+    valoracionDesc: "!valoracion",
+    plataformaAsc: "plataforma",
+    plataformaDesc: "!plataforma",
+    directorAsc: "director",
+    directorDesc: "!director",
+    protagonistaAsc: "protagonista",
+    protagonistaDesc: "!protagonista",
+  }
   peliculas: any[] = [
     {
       "nombre": "La Comunidad del Anillo",

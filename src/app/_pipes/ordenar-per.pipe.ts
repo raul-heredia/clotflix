@@ -12,7 +12,6 @@ export class OrdenarPerPipe implements PipeTransform {
       if (ordernarPerValor.charAt(0) == "!") {
         perValor = -1
         ordernarPerValor = ordernarPerValor.substring(1)
-        console.log(ordernarPerValor);
       }
 
       array.sort((a: any, b: any) => {
