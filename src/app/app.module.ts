@@ -10,6 +10,7 @@ import { PeliculasComponent } from './peliculas/peliculas.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { SafePipe } from './_pipes/safe.pipe';
 import { OrdenarPerPipe } from './_pipes/ordenar-per.pipe';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { OrdenarPerPipe } from './_pipes/ordenar-per.pipe';
     InicioComponent,
     SafePipe,
     OrdenarPerPipe,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

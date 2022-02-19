@@ -25,10 +25,13 @@
       <li class="list-group-item"><span>Protagonista:</span> {{pelicula.protagonista}}</li>
       <li class="list-group-item"><span>Plataforma:</span> {{pelicula.plataforma}}</li>
     </ul>
-    <div class="card-body bottom">
+    <div class="card-body bottom d-flex align-items-stretch justify-content-center">
       <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
         [attr.data-bs-target]="'#' + pelicula.modalId">
         Más Información
+      </button>
+      <button type="button" class="btn">
+        <i class="bi bi-heart"></i>
       </button>
     </div>
     <!-- Modal -->

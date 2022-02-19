@@ -200,6 +200,30 @@ export class PeliculasComponent implements OnInit {
       "imagen": "assets/images/peliculas/retornoDelJedi.jpg",
       "modalId": "retornoDelJedi"
     },
+    {
+      "nombre": "Fast & Furious 5",
+      "sinopsis": "Dominic Toretto y su equipo de corredores callejeros planean un atraco masivo para comprar su libertad mientras están en la mira de un poderoso narcotraficante brasileño y un peligroso agente federal.",
+      "valoracion": 7.3,
+      "youtube": "https://www.youtube.com/embed/vcn2GOuZCKI",
+      "plataforma": "Netflix",
+      "director": "Justin Lin",
+      "productora": "Original Film",
+      "protagonista": "Vin Diesel",
+      "imagen": "assets/images/peliculas/fastfive.jpg",
+      "modalId": "fastfive"
+    },
+    {
+      "nombre": "Fast & Furious 9",
+      "sinopsis": "Dom y su equipo se enfrentan a un terrorista internacional que resulta ser el hermano de Dom y Mia, con el que no tienen relación.",
+      "valoracion": 5.2,
+      "youtube": "https://www.youtube.com/embed/fV7gg929uDU",
+      "plataforma": "Netflix",
+      "director": "Justin Lin",
+      "productora": "Original Film",
+      "protagonista": "Vin Diesel",
+      "imagen": "assets/images/peliculas/fast9.jpg",
+      "modalId": "fastnine"
+    },
   ];
 
   constructor() { }
