@@ -1,5 +1,20 @@
+<div class="ordenSelect d-flex align-items-stretch justify-content-center flex-wrap">
+  <select class="form-select" aria-label="Ordenar Por" [(ngModel)]="selectFiltroSerie" name="selectFiltroSerie">
+    <option selected disabled value="!">Ordenar Por</option>
+    <option [ngValue]="filter.nombreAsc">Nombre Ascendente</option>
+    <option [ngValue]="filter.nombreDesc">Nombre Descendente</option>
+    <option [ngValue]="filter.valoracionAsc">Valoración Ascendente</option>
+    <option [ngValue]="filter.valoracionDesc">Valoración Descendente</option>
+    <option [ngValue]="filter.plataformaAsc">Plataforma Ascendente</option>
+    <option [ngValue]="filter.plataformaDesc">Plataforma Descendente</option>
+    <option [ngValue]="filter.directorAsc">Director Ascendente</option>
+    <option [ngValue]="filter.directorDesc">Director Descendente</option>
+    <option [ngValue]="filter.protagonistaAsc">Protagonista Ascendente</option>
+    <option [ngValue]="filter.protagonistaDesc">Protagonista Descendente</option>
+  </select>
+</div>
 <div class="d-flex align-items-stretch justify-content-center flex-wrap">
-  <div class="card" style="width: 18rem;" *ngFor="let serie of series">
+  <div class="card" style="width: 18rem;" *ngFor="let serie of series | ordenarPer: selectFiltroSerie">
     <img class="card-img-top" src="{{serie.imagen}}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{serie.nombre}}</h5>
@@ -7,7 +22,7 @@
     <ul class="list-group list-group-flush">
       <li class="list-group-item"><span>Valoración:</span> {{serie.valoracion}}/10</li>
       <li class="list-group-item"><span>Director:</span> {{serie.director}}</li>
-      <li class="list-group-item"><span>Protagonistas:</span> {{serie.protagonistas}}</li>
+      <li class="list-group-item"><span>Protagonista:</span> {{serie.protagonista}}</li>
       <li class="list-group-item"><span>Plataforma:</span> {{serie.plataforma}}</li>
     </ul>
     <div class="card-body bottom">
@@ -22,7 +37,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">{{serie.nombre}}</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="container">
@@ -38,7 +53,7 @@
                       <p class="modal-p"><span>Director:</span> {{serie.director}}</p>
                     </div>
                     <div class="col">
-                      <p class="modal-p"><span>Protagonistas:</span> {{serie.protagonistas}}</p>
+                      <p class="modal-p"><span>Protagonista:</span> {{serie.protagonista}}</p>
                     </div>
                     <div class="w-100"></div>
                     <div class="col">

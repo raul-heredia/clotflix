@@ -7,6 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class SeriesComponent implements OnInit {
+  selectFiltroSerie: any = "!"; // la seleccion del filtro, por defecto es como viene ordenado en el array series
+  filter = {
+    nombreAsc: "nombre",
+    nombreDesc: "!nombre",
+    valoracionAsc: "valoracion",
+    valoracionDesc: "!valoracion",
+    plataformaAsc: "plataforma",
+    plataformaDesc: "!plataforma",
+    directorAsc: "director",
+    directorDesc: "!director",
+    protagonistaAsc: "protagonista",
+    protagonistaDesc: "!protagonista",
+  }
   series: any[] =  [
     {
     "nombre": "The Mandalorian",
@@ -16,7 +29,7 @@ export class SeriesComponent implements OnInit {
     "plataforma": "Disney +",
     "director": "Dave Filoni",
     "productora": "Lucasfilm",
-    "protagonistas": "Pedro Pascal",
+    "protagonista": "Pedro Pascal",
     "imagen": "assets/images/series/mandalorian.jpg",
     "modalId": "mandalorian"
     },
@@ -28,7 +41,7 @@ export class SeriesComponent implements OnInit {
     "plataforma": "Netflix",
     "director": "Steven Knight",
     "productora": "BBC Studios",
-    "protagonistas": "Cillian Murphy",
+    "protagonista": "Cillian Murphy",
     "imagen": "assets/images/series/peakyBlinders.jpg",
     "modalId": "peakyBlinders"
     },
@@ -40,7 +53,7 @@ export class SeriesComponent implements OnInit {
       "plataforma": "Netflix",
       "director": "Vince Gilligan",
       "productora": "High Bridge Entertainment",
-      "protagonistas": "Bryan Cranston",
+      "protagonista": "Bryan Cranston",
       "imagen": "assets/images/series/breakingBad.jpg",
       "modalId": "breakingBad"
       },
@@ -52,7 +65,7 @@ export class SeriesComponent implements OnInit {
       "plataforma": "Paramount +, Pluto TV",
       "director": "Bryan Fuller",
       "productora": "CBS Studios",
-      "protagonistas": "S. Martin-Green",
+      "protagonista": "S. Martin-Green",
       "imagen": "assets/images/series/starTrekDiscovery.jpg",
       "modalId": "starTrekDiscovery"
       },
@@ -64,7 +77,7 @@ export class SeriesComponent implements OnInit {
       "plataforma": "Netflix",
       "director": "Tom Kapinos",
       "productora": "DC Entertainment",
-      "protagonistas": "Tom Ellis",
+      "protagonista": "Tom Ellis",
       "imagen": "assets/images/series/lucifer.jpg",
       "modalId": "lucifer"
       },
@@ -76,7 +89,7 @@ export class SeriesComponent implements OnInit {
       "plataforma": "Disney +",
       "director": "Dave Filoni",
       "productora": "Lucasfilm",
-      "protagonistas": "Anakin Skywalker",
+      "protagonista": "Anakin Skywalker",
       "imagen": "assets/images/series/cloneWars.jpg",
       "modalId": "cloneWars"
       },
@@ -88,7 +101,7 @@ export class SeriesComponent implements OnInit {
       "plataforma": "Amazon Prime Video",
       "director": "Nick Santora",
       "productora": "Amazon Prime Video",
-      "protagonistas": "Alan Ritchson",
+      "protagonista": "Alan Ritchson",
       "imagen": "assets/images/series/reacher.jpg",
       "modalId": "reacher"
       },
@@ -100,7 +113,7 @@ export class SeriesComponent implements OnInit {
       "plataforma": "Netflix, Movistar +",
       "director": "Vince Gilligan",
       "productora": "High Bridge Productions",
-      "protagonistas": "Bob Odenkirk",
+      "protagonista": "Bob Odenkirk",
       "imagen": "assets/images/series/betterCallSaul.jpg",
       "modalId": "betterCallSaul"
       },
@@ -112,7 +125,7 @@ export class SeriesComponent implements OnInit {
       "plataforma": "Disney +",
       "director": "Jon Favreau",
       "productora": "Lucasfilm",
-      "protagonistas": "Temuera Morrison",
+      "protagonista": "Temuera Morrison",
       "imagen": "assets/images/series/bobaFett.jpg",
       "modalId": "bobaFett"
       },
@@ -124,7 +137,7 @@ export class SeriesComponent implements OnInit {
       "plataforma": "Amazon Prime Video",
       "director": "Kirsten Beyer",
       "productora": "CBS Studios",
-      "protagonistas": "Patrick Stewart",
+      "protagonista": "Patrick Stewart",
       "imagen": "assets/images/series/starTrekPicard.jpg",
       "modalId": "starTrekPicard"
       },
@@ -136,7 +149,7 @@ export class SeriesComponent implements OnInit {
       "plataforma": "Movistar +",
       "director": "Michael Brandt",
       "productora": "CBS Studios",
-      "protagonistas": "Taylor Kinney",
+      "protagonista": "Taylor Kinney",
       "imagen": "assets/images/series/chicagoFire.jpg",
       "modalId": "chicagoFire"
       },
@@ -148,7 +161,7 @@ export class SeriesComponent implements OnInit {
       "plataforma": "Disney +",
       "director": "Michael Waldron",
       "productora": "Marvel Studios",
-      "protagonistas": "Tom Hiddleston",
+      "protagonista": "Tom Hiddleston",
       "imagen": "assets/images/series/loki.jpg",
       "modalId": "loki"
       },
@@ -160,7 +173,7 @@ export class SeriesComponent implements OnInit {
       "plataforma": "Netflix",
       "director": "Aaron Korsh",
       "productora": "USA Network",
-      "protagonistas": "Gabriel Macht",
+      "protagonista": "Gabriel Macht",
       "imagen": "assets/images/series/suits.jpg",
       "modalId": "suits"
       },
@@ -172,7 +185,7 @@ export class SeriesComponent implements OnInit {
       "plataforma": "Netflix",
       "director": "Hwang Dong-hyuk",
       "productora": "Siren Pictures Inc.",
-      "protagonistas": "Lee Jung-jae",
+      "protagonista": "Lee Jung-jae",
       "imagen": "assets/images/series/squidGame.jpg",
       "modalId": "squidGame"
       }

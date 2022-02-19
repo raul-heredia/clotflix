@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 // COMPONENTS
 import { NavbarComponent } from './navbar/navbar.component';
 import { SeriesComponent } from './series/series.component';
 import { MainComponent } from './main/main.component';
 import { PeliculasComponent } from './peliculas/peliculas.component';
 import { InicioComponent } from './inicio/inicio.component';
-import { SafePipe } from './safe.pipe';
+import { SafePipe } from './_pipes/safe.pipe';
+import { OrdenarPerPipe } from './_pipes/ordenar-per.pipe';
 
 @NgModule({
   declarations: [
@@ -18,10 +20,12 @@ import { SafePipe } from './safe.pipe';
     PeliculasComponent,
     InicioComponent,
     SafePipe,
+    OrdenarPerPipe,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [MainComponent]

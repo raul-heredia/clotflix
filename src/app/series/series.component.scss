@@ -56,3 +56,9 @@ button.btn-close:hover{
   color: $darkRed;
   font-weight: bold;
 }
+.ordenSelect select{
+  width: 18rem;
+  background-color: lighten($bg-color, 8);
+  border-color: lighten($bg-color, 8) !important;
+  color: $lightGrey;
+}

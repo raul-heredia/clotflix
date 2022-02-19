@@ -15,7 +15,7 @@ export class PeliculasComponent implements OnInit {
       "plataforma": "Prime Video, Netflix",
       "director": "Peter Jackson",
       "productora": "New Line Cinema",
-      "protagonistas": "Elijah Wood",
+      "protagonista": "Elijah Wood",
       "imagen": "assets/images/peliculas/comunidadDelAnillo.jpg",
       "modalId": "señorDeLosAnillos1"
     },
@@ -27,7 +27,7 @@ export class PeliculasComponent implements OnInit {
       "plataforma": "Prime Video, Netflix",
       "director": "Peter Jackson",
       "productora": "New Line Cinema",
-      "protagonistas": "Elijah Wood",
+      "protagonista": "Elijah Wood",
       "imagen": "assets/images/peliculas/lasDosTorres.png",
       "modalId": "lasDosTorres"
     },
@@ -39,7 +39,7 @@ export class PeliculasComponent implements OnInit {
       "plataforma": "Prime Video, Netflix",
       "director": "Peter Jackson",
       "productora": "New Line Cinema",
-      "protagonistas": "Viggo Mortensen",
+      "protagonista": "Viggo Mortensen",
       "imagen": "assets/images/peliculas/retornoDelRey.jpg",
       "modalId": "elRetornoDelRey"
     },
@@ -51,7 +51,7 @@ export class PeliculasComponent implements OnInit {
       "plataforma": "Disney+",
       "director": "Anthony Russo",
       "productora": "Marvel Studios",
-      "protagonistas": "Robert Downey Jr",
+      "protagonista": "Robert Downey Jr",
       "imagen": "assets/images/peliculas/infinityWar.jpg",
       "modalId": "infinityWar"
     },
@@ -63,7 +63,7 @@ export class PeliculasComponent implements OnInit {
       "plataforma": "Disney+",
       "director": "David Ayer",
       "productora": "Marvel Studios",
-      "protagonistas": "Brad Pitt",
+      "protagonista": "Brad Pitt",
       "imagen": "assets/images/peliculas/corazonesDeAcero.jpg",
       "modalId": "corazonesDeAcero"
     },
@@ -75,7 +75,7 @@ export class PeliculasComponent implements OnInit {
       "plataforma": "Netflix, Movistar +",
       "director": "Christopher Nolan",
       "productora": "	Syncopy Inc",
-      "protagonistas": "Fionn Whitehead",
+      "protagonista": "Fionn Whitehead",
       "imagen": "assets/images/peliculas/dunkerque.jpg",
       "modalId": "dunkerque"
     },
@@ -87,7 +87,7 @@ export class PeliculasComponent implements OnInit {
       "plataforma": "Netflix",
       "director": "Alejandro G. Iñárritu",
       "productora": "Regency Enterprises",
-      "protagonistas": "Leonardo DiCaprio",
+      "protagonista": "Leonardo DiCaprio",
       "imagen": "assets/images/peliculas/elRenacido.jpg",
       "modalId": "elRenacido"
     },
@@ -99,7 +99,7 @@ export class PeliculasComponent implements OnInit {
       "plataforma": "Disney +",
       "director": "George Lucas",
       "productora": "Lucasfilm",
-      "protagonistas": "Ewan McGregor",
+      "protagonista": "Ewan McGregor",
       "imagen": "assets/images/peliculas/starWarsAmenazaFantasma.jpg",
       "modalId": "amenazaFantasma"
     },
@@ -111,7 +111,7 @@ export class PeliculasComponent implements OnInit {
       "plataforma": "Disney +",
       "director": "George Lucas",
       "productora": "Lucasfilm",
-      "protagonistas": "Hayden Christensen",
+      "protagonista": "Hayden Christensen",
       "imagen": "assets/images/peliculas/starWarsAtaqueDeLosClones.jpg",
       "modalId": "ataqueDeLosClones"
     },
@@ -123,7 +123,7 @@ export class PeliculasComponent implements OnInit {
       "plataforma": "Disney +",
       "director": "George Lucas",
       "productora": "Lucasfilm",
-      "protagonistas": "Hayden Christensen",
+      "protagonista": "Hayden Christensen",
       "imagen": "assets/images/peliculas/starWarsLaVenganzaDeLosSith.jpg",
       "modalId": "laVenganzaDeLosSith"
     },
@@ -135,7 +135,7 @@ export class PeliculasComponent implements OnInit {
       "plataforma": "Disney +",
       "director": "Ron Howard",
       "productora": "Lucasfilm",
-      "protagonistas": "Alden Ehrenreich",
+      "protagonista": "Alden Ehrenreich",
       "imagen": "assets/images/peliculas/hanSolo.jpg",
       "modalId": "hanSolo"
     },
@@ -147,7 +147,7 @@ export class PeliculasComponent implements OnInit {
       "plataforma": "Disney +",
       "director": "Gareth Edwards",
       "productora": "Lucasfilm",
-      "protagonistas": "Felicity Jones",
+      "protagonista": "Felicity Jones",
       "imagen": "assets/images/peliculas/rogueOne.jpg",
       "modalId": "rogueOne"
     },
@@ -159,7 +159,7 @@ export class PeliculasComponent implements OnInit {
       "plataforma": "Disney +",
       "director": "George Lucas",
       "productora": "Lucasfilm",
-      "protagonistas": "Mark Hamill",
+      "protagonista": "Mark Hamill",
       "imagen": "assets/images/peliculas/unaNuevaEsperanza.jpg",
       "modalId": "unaNuevaEsperanza"
     },
@@ -171,7 +171,7 @@ export class PeliculasComponent implements OnInit {
       "plataforma": "Disney +",
       "director": "George Lucas",
       "productora": "Lucasfilm",
-      "protagonistas": "Mark Hamill",
+      "protagonista": "Mark Hamill",
       "imagen": "assets/images/peliculas/elImperioContraataca.jpg",
       "modalId": "elImperioContraataca"
     },
@@ -183,7 +183,7 @@ export class PeliculasComponent implements OnInit {
       "plataforma": "Disney +",
       "director": "George Lucas",
       "productora": "Lucasfilm",
-      "protagonistas": "Mark Hamill",
+      "protagonista": "Mark Hamill",
       "imagen": "assets/images/peliculas/retornoDelJedi.jpg",
       "modalId": "retornoDelJedi"
     },
