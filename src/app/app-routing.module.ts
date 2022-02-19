@@ -7,11 +7,13 @@ import { InicioComponent } from './inicio/inicio.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SeriesComponent } from './series/series.component';
 import { PeliculasComponent } from './peliculas/peliculas.component';
+import { MiListaComponent } from './mi-lista/mi-lista.component';
 
 const routes: Routes = [
   { path: '', component: InicioComponent },
   { path: 'peliculas', component: PeliculasComponent },
   { path: 'series', component: SeriesComponent },
+  { path: 'milista', component: MiListaComponent }
 
 ];
 

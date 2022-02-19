@@ -28,10 +28,12 @@
     let inicio = document.getElementById('inicio');
     let peliculas = document.getElementById('peliculas');
     let series = document.getElementById('series');
+    let milista = document.getElementById('milista');
     function resetClass() {
       inicio.classList.remove("active");
       peliculas.classList.remove("active");
       series.classList.remove("active");
+      milista.classList.remove("active");
     }
     logo.addEventListener('click', () => {
       resetClass();
@@ -48,6 +50,10 @@
     series.addEventListener('click', () => {
       resetClass();
       series.classList.add("active");
+    })
+    milista.addEventListener('click', () => {
+      resetClass();
+      milista.classList.add("active");
     })
     jQuery('.modal').on('hidden.bs.modal', function () {
       let idModalClicked = this.id;
