@@ -235,8 +235,6 @@ export class PeliculasComponent implements OnInit {
     console.log(id)
     for (let pelicula of this.peliculas){
       if (pelicula.modalId == id){
-        console.log("trobat");
-        console.log(pelicula);
         this.dbService.add('favoritos', {
           nombre: pelicula.nombre,
           sinopsis: pelicula.sinopsis,
@@ -249,7 +247,7 @@ export class PeliculasComponent implements OnInit {
           imagen: pelicula.imagen,
           modalId: pelicula.modalId,
         }).subscribe((key) => {
-          console.log('key: ', key, 'Added succesfully');
+          console.log('Pelicula: ', key.nombre, 'añadida a favoritos');
         });
       }
     }

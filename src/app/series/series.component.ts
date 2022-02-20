@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NgxIndexedDBService,IndexDetails  } from 'ngx-indexed-db';
 @Component({
   selector: 'app-series',
   templateUrl: './series.component.html',
@@ -190,10 +190,32 @@ export class SeriesComponent implements OnInit {
       "modalId": "squidGame"
       }
   ];
-  constructor() { }
+  constructor(private dbService: NgxIndexedDBService) { }
 
   ngOnInit(): void {
 
+  }
+
+  addFavorito(id:any):void{
+    console.log(id)
+    for (let serie of this.series){
+      if (serie.modalId == id){
+        this.dbService.add('favoritos', {
+          nombre: serie.nombre,
+          sinopsis: serie.sinopsis,
+          valoracion: serie.valoracion,
+          youtube: serie.youtube,
+          plataforma: serie.plataforma,
+          director: serie.director,
+          productora: serie.productora,
+          protagonista: serie.protagonista,
+          imagen: serie.imagen,
+          modalId: serie.modalId,
+        }).subscribe((key) => {
+          console.log('Serie: ', key.nombre, 'añadida a favoritos');
+        });
+      }
+    }
   }
 
 }
