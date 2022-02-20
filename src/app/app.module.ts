@@ -15,18 +15,39 @@ import { OrdenarPerPipe } from './_pipes/ordenar-per.pipe';
 import { FooterComponent } from './footer/footer.component';
 import { MiListaComponent } from './mi-lista/mi-lista.component';
 
+// Ahead of time compiles requires an exported function for factories
+export function migrationFactory() {
+  // The animal table was added with version 2 but none of the existing tables or data needed
+  // to be modified so a migrator for that version is not included.
+  return {
+    1: (db:any, transaction:any) => {
+      const store = transaction.objectStore('favoritos');
+      store.createIndex('id', {keyPath: 'modalId'}, { unique: true });
+    },
+  };
+}
+
 
 const dbConfig: DBConfig  = {
   name: 'Clotflix',
   version: 1,
   objectStoresMeta: [{
     store: 'favoritos',
-    storeConfig: { keyPath: 'id', autoIncrement: true },
+    storeConfig: { keyPath: 'modalId',autoIncrement: false },
     storeSchema: [
-      { name: 'name', keypath: 'name', options: { unique: false } },
-      { name: 'email', keypath: 'email', options: { unique: false } }
+      { name: 'nombre', keypath: 'nombre', options: { unique: false } },
+      { name: 'sinopsis', keypath: 'sinopsis', options: { unique: false } },
+      { name: 'valoracion', keypath: 'valoracion', options: { unique: false } },
+      { name: 'youtube', keypath: 'youtube', options: { unique: false } },
+      { name: 'plataforma', keypath: 'plataforma', options: { unique: false } },
+      { name: 'director', keypath: 'director', options: { unique: false } },
+      { name: 'productora', keypath: 'productora', options: { unique: false } },
+      { name: 'protagonista', keypath: 'protagonista', options: { unique: false } },
+      { name: 'imagen', keypath: 'imagen', options: { unique: false } },
+      { name: 'modalId', keypath: 'modalId', options: { unique: false } },
     ]
-  }]
+  }],
+  migrationFactory
 };
 
 
