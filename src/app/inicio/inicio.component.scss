@@ -1,8 +1,14 @@
 @import '../common/colors';
 
-h3{
+h1{
   margin-top: 10px;
   text-align: center;
   font-family: 'Bebas Neue', cursive;
   color: $red;
+  margin-bottom: -76px;
+}
+
+h1#first{
+  margin-top: 76px;
+  margin-bottom: -76px;
 }

@@ -1,5 +1,9 @@
 @import '../common/colors';
 
+select{
+  margin-top: 76px;
+}
+
 .card, .list-group-item{
   background-color: lighten($bg-color, 8) !important;
   color: $grey;
