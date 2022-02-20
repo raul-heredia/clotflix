@@ -30,8 +30,8 @@ export class SeriesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.comprobarFavorito();
     this.obtenerSeries();
+    this.comprobarFavorito();
   }
 
   obtenerSeries(): void {
