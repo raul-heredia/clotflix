@@ -25,10 +25,13 @@
       <li class="list-group-item"><span>Protagonista:</span> {{favorito.protagonista}}</li>
       <li class="list-group-item"><span>Plataforma:</span> {{favorito.plataforma}}</li>
     </ul>
-    <div class="card-body bottom">
+    <div class="card-body bottom d-flex align-items-stretch justify-content-center">
       <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
         [attr.data-bs-target]="'#' + favorito.modalId">
         Más Información
+      </button>
+      <button type="button" class="btn" (click)="eliminarFavorito(favorito.modalId)">
+        <i class="bi bi-heart-fill"></i>
       </button>
     </div>
     <!-- Modal -->

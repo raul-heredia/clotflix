@@ -30,8 +30,8 @@
         [attr.data-bs-target]="'#' + serie.modalId">
         Más Información
       </button>
-      <button type="button" class="btn" (click)="addFavorito(serie.modalId)">
-        <i class="bi bi-heart"></i>
+      <button type="button" class="btn" (click)="gestionFavorito(serie.isFavorite,serie.modalId)">
+        <i [ngClass]="serie.isFavorite ? 'bi bi-heart-fill' : 'bi bi-heart'"></i>
       </button>
     </div>
     <!-- Modal -->

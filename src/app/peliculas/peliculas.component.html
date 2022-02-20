@@ -30,8 +30,8 @@
         [attr.data-bs-target]="'#' + pelicula.modalId">
         Más Información
       </button>
-      <button type="button" class="btn" (click)="addFavorito(pelicula.modalId)">
-        <i class="bi bi-heart"></i>
+      <button type="button" class="btn" (click)="gestionFavorito(pelicula.isFavorite,pelicula.modalId)">
+        <i [ngClass]="pelicula.isFavorite ? 'bi bi-heart-fill' : 'bi bi-heart'"></i>
       </button>
     </div>
     <!-- Modal -->

@@ -30,7 +30,8 @@ export class PeliculasComponent implements OnInit {
       "productora": "New Line Cinema",
       "protagonista": "Elijah Wood",
       "imagen": "assets/images/peliculas/comunidadDelAnillo.jpg",
-      "modalId": "señorDeLosAnillos1"
+      "modalId": "señorDeLosAnillos1",
+      "isFavorite": false
     },
     {
       "nombre": "Las Dos Torres",
@@ -42,7 +43,8 @@ export class PeliculasComponent implements OnInit {
       "productora": "New Line Cinema",
       "protagonista": "Elijah Wood",
       "imagen": "assets/images/peliculas/lasDosTorres.png",
-      "modalId": "lasDosTorres"
+      "modalId": "lasDosTorres",
+      "isFavorite": false
     },
     {
       "nombre": "El Retorno del Rey",
@@ -54,7 +56,8 @@ export class PeliculasComponent implements OnInit {
       "productora": "New Line Cinema",
       "protagonista": "Viggo Mortensen",
       "imagen": "assets/images/peliculas/retornoDelRey.jpg",
-      "modalId": "elRetornoDelRey"
+      "modalId": "elRetornoDelRey",
+      "isFavorite": false
     },
     {
       "nombre": "Vengadores: Infinity War",
@@ -66,7 +69,8 @@ export class PeliculasComponent implements OnInit {
       "productora": "Marvel Studios",
       "protagonista": "Robert Downey Jr",
       "imagen": "assets/images/peliculas/infinityWar.jpg",
-      "modalId": "infinityWar"
+      "modalId": "infinityWar",
+      "isFavorite": false
     },
     {
       "nombre": "Corazones de acero",
@@ -78,7 +82,8 @@ export class PeliculasComponent implements OnInit {
       "productora": "Marvel Studios",
       "protagonista": "Brad Pitt",
       "imagen": "assets/images/peliculas/corazonesDeAcero.jpg",
-      "modalId": "corazonesDeAcero"
+      "modalId": "corazonesDeAcero",
+      "isFavorite": false
     },
     {
       "nombre": "Dunkerque",
@@ -90,7 +95,8 @@ export class PeliculasComponent implements OnInit {
       "productora": "	Syncopy Inc",
       "protagonista": "Fionn Whitehead",
       "imagen": "assets/images/peliculas/dunkerque.jpg",
-      "modalId": "dunkerque"
+      "modalId": "dunkerque",
+      "isFavorite": false
     },
     {
       "nombre": "El Renacido",
@@ -102,7 +108,8 @@ export class PeliculasComponent implements OnInit {
       "productora": "Regency Enterprises",
       "protagonista": "Leonardo DiCaprio",
       "imagen": "assets/images/peliculas/elRenacido.jpg",
-      "modalId": "elRenacido"
+      "modalId": "elRenacido",
+      "isFavorite": false
     },
     {
       "nombre": "La Amenaza Fantasma",
@@ -114,7 +121,8 @@ export class PeliculasComponent implements OnInit {
       "productora": "Lucasfilm",
       "protagonista": "Ewan McGregor",
       "imagen": "assets/images/peliculas/starWarsAmenazaFantasma.jpg",
-      "modalId": "amenazaFantasma"
+      "modalId": "amenazaFantasma",
+      "isFavorite": false
     },
     {
       "nombre": "El Ataque De Los Clones",
@@ -126,7 +134,8 @@ export class PeliculasComponent implements OnInit {
       "productora": "Lucasfilm",
       "protagonista": "Hayden Christensen",
       "imagen": "assets/images/peliculas/starWarsAtaqueDeLosClones.jpg",
-      "modalId": "ataqueDeLosClones"
+      "modalId": "ataqueDeLosClones",
+      "isFavorite": false
     },
     {
       "nombre": "La venganza de los sith",
@@ -138,7 +147,8 @@ export class PeliculasComponent implements OnInit {
       "productora": "Lucasfilm",
       "protagonista": "Hayden Christensen",
       "imagen": "assets/images/peliculas/starWarsLaVenganzaDeLosSith.jpg",
-      "modalId": "laVenganzaDeLosSith"
+      "modalId": "laVenganzaDeLosSith",
+      "isFavorite": false
     },
     {
       "nombre": "Han Solo",
@@ -150,7 +160,8 @@ export class PeliculasComponent implements OnInit {
       "productora": "Lucasfilm",
       "protagonista": "Alden Ehrenreich",
       "imagen": "assets/images/peliculas/hanSolo.jpg",
-      "modalId": "hanSolo"
+      "modalId": "hanSolo",
+      "isFavorite": false
     },
     {
       "nombre": "Rogue One",
@@ -162,7 +173,8 @@ export class PeliculasComponent implements OnInit {
       "productora": "Lucasfilm",
       "protagonista": "Felicity Jones",
       "imagen": "assets/images/peliculas/rogueOne.jpg",
-      "modalId": "rogueOne"
+      "modalId": "rogueOne",
+      "isFavorite": false
     },
     {
       "nombre": "Una nueva esperanza",
@@ -174,7 +186,8 @@ export class PeliculasComponent implements OnInit {
       "productora": "Lucasfilm",
       "protagonista": "Mark Hamill",
       "imagen": "assets/images/peliculas/unaNuevaEsperanza.jpg",
-      "modalId": "unaNuevaEsperanza"
+      "modalId": "unaNuevaEsperanza",
+      "isFavorite": false
     },
     {
       "nombre": "El Imperio contraataca",
@@ -186,7 +199,8 @@ export class PeliculasComponent implements OnInit {
       "productora": "Lucasfilm",
       "protagonista": "Mark Hamill",
       "imagen": "assets/images/peliculas/elImperioContraataca.jpg",
-      "modalId": "elImperioContraataca"
+      "modalId": "elImperioContraataca",
+      "isFavorite": false
     },
     {
       "nombre": "El retorno del jedi",
@@ -198,7 +212,8 @@ export class PeliculasComponent implements OnInit {
       "productora": "Lucasfilm",
       "protagonista": "Mark Hamill",
       "imagen": "assets/images/peliculas/retornoDelJedi.jpg",
-      "modalId": "retornoDelJedi"
+      "modalId": "retornoDelJedi",
+      "isFavorite": false
     },
     {
       "nombre": "Fast & Furious 5",
@@ -210,7 +225,8 @@ export class PeliculasComponent implements OnInit {
       "productora": "Original Film",
       "protagonista": "Vin Diesel",
       "imagen": "assets/images/peliculas/fastfive.jpg",
-      "modalId": "fastfive"
+      "modalId": "fastfive",
+      "isFavorite": false
     },
     {
       "nombre": "Fast & Furious 9",
@@ -222,34 +238,65 @@ export class PeliculasComponent implements OnInit {
       "productora": "Original Film",
       "protagonista": "Vin Diesel",
       "imagen": "assets/images/peliculas/fast9.jpg",
-      "modalId": "fastnine"
+      "modalId": "fastnine",
+      "isFavorite": false
     },
   ];
 
-  constructor(private dbService: NgxIndexedDBService) { }
+  constructor(private dbService: NgxIndexedDBService) {
+    this.comprobarFavorito();
+   }
 
   ngOnInit(): void {
   }
 
-  addFavorito(id:any):void{
-    console.log(id)
-    for (let pelicula of this.peliculas){
-      if (pelicula.modalId == id){
-        this.dbService.add('favoritos', {
-          nombre: pelicula.nombre,
-          sinopsis: pelicula.sinopsis,
-          valoracion: pelicula.valoracion,
-          youtube: pelicula.youtube,
-          plataforma: pelicula.plataforma,
-          director: pelicula.director,
-          productora: pelicula.productora,
-          protagonista: pelicula.protagonista,
-          imagen: pelicula.imagen,
-          modalId: pelicula.modalId,
-        }).subscribe((key) => {
-          console.log('Pelicula: ', key.nombre, 'añadida a favoritos');
-        });
+  comprobarFavorito():void{
+    let favPelicula:any;
+    this.dbService.getAll('favoritos').subscribe((favorito) => {
+      for (favPelicula of favorito){
+        for (let pelicula of this.peliculas){
+          if(pelicula.modalId == favPelicula.modalId){
+            pelicula.isFavorite = true;
+          }
+        }
+      }
+    });
+  }
+
+  gestionFavorito(isFavorite:boolean,id:any):void{
+    if(isFavorite){
+      // Si es favorito lo borra
+      this.dbService.delete('favoritos', id).subscribe((pelicula) => {
+        console.log(`Pelicula con id: ${id} eliminada de favoritos`);
+      });
+      for (let pelicula of this.peliculas){
+        if(pelicula.modalId == id){
+          pelicula.isFavorite = false;
+        }
+      }
+    }else{
+      // Si no es favorito lo añade
+      console.log(id)
+      for (let pelicula of this.peliculas){
+        if (pelicula.modalId == id){
+          pelicula.isFavorite == true;
+          this.dbService.add('favoritos', {
+            nombre: pelicula.nombre,
+            sinopsis: pelicula.sinopsis,
+            valoracion: pelicula.valoracion,
+            youtube: pelicula.youtube,
+            plataforma: pelicula.plataforma,
+            director: pelicula.director,
+            productora: pelicula.productora,
+            protagonista: pelicula.protagonista,
+            imagen: pelicula.imagen,
+            modalId: pelicula.modalId,
+          }).subscribe((key) => {
+            console.log('Pelicula: ', key.nombre, 'añadida a favoritos');
+          });
+        }
       }
     }
+    this.comprobarFavorito();
   }
 }

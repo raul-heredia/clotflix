@@ -23,14 +23,25 @@ export class MiListaComponent implements OnInit {
   }
   miLista:  any[] = [];
   constructor(private dbService: NgxIndexedDBService){
-    this.dbService.getAll('favoritos').subscribe((favorito) => {
-      for (let fav of favorito){
-        this.miLista.push(fav)
-      }
-    });
+    this.comprobarListaIDB();
   }
   ngOnInit(): void {
     // Iterar indexeddb y cargar datos en array miLista
   }
 
+  comprobarListaIDB():void{
+    this.miLista = [];
+    this.dbService.getAll('favoritos').subscribe((favorito) => {
+      for (let fav of favorito){
+        this.miLista.push(fav)
+      }
+    });
+    console.log(this.miLista);
+  }
+  eliminarFavorito(id:any):void{
+    this.dbService.delete('favoritos', id).subscribe((pelicula) => {
+      console.log(`Serie con id: ${id} eliminada de favoritos`);
+      this.comprobarListaIDB();
+    });
+  }
 }

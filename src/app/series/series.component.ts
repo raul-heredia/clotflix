@@ -1,12 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { NgxIndexedDBService,IndexDetails  } from 'ngx-indexed-db';
+import { MiListaComponent } from '../mi-lista/mi-lista.component';
 @Component({
   selector: 'app-series',
   templateUrl: './series.component.html',
-  styleUrls: ['./series.component.scss']
+  styleUrls: ['./series.component.scss'],
 })
 
 export class SeriesComponent implements OnInit {
+
   selectFiltroSerie: any = "!"; // la seleccion del filtro, por defecto es como viene ordenado en el array series
   filter = {
     nombreAsc: "nombre",
@@ -31,7 +33,8 @@ export class SeriesComponent implements OnInit {
     "productora": "Lucasfilm",
     "protagonista": "Pedro Pascal",
     "imagen": "assets/images/series/mandalorian.jpg",
-    "modalId": "mandalorian"
+    "modalId": "mandalorian",
+    "isFavorite": false
     },
     {
     "nombre": "Peaky Blinders",
@@ -43,7 +46,8 @@ export class SeriesComponent implements OnInit {
     "productora": "BBC Studios",
     "protagonista": "Cillian Murphy",
     "imagen": "assets/images/series/peakyBlinders.jpg",
-    "modalId": "peakyBlinders"
+    "modalId": "peakyBlinders",
+    "isFavorite": false
     },
     {
       "nombre": "Breaking Bad",
@@ -55,7 +59,8 @@ export class SeriesComponent implements OnInit {
       "productora": "High Bridge Entertainment",
       "protagonista": "Bryan Cranston",
       "imagen": "assets/images/series/breakingBad.jpg",
-      "modalId": "breakingBad"
+      "modalId": "breakingBad",
+      "isFavorite": false
       },
       {
       "nombre": "Star Trek: Discovery",
@@ -67,7 +72,8 @@ export class SeriesComponent implements OnInit {
       "productora": "CBS Studios",
       "protagonista": "S. Martin-Green",
       "imagen": "assets/images/series/starTrekDiscovery.jpg",
-      "modalId": "starTrekDiscovery"
+      "modalId": "starTrekDiscovery",
+      "isFavorite": false
       },
       {
       "nombre": "Lucifer",
@@ -79,7 +85,8 @@ export class SeriesComponent implements OnInit {
       "productora": "DC Entertainment",
       "protagonista": "Tom Ellis",
       "imagen": "assets/images/series/lucifer.jpg",
-      "modalId": "lucifer"
+      "modalId": "lucifer",
+      "isFavorite": false
       },
       {
       "nombre": "Star Wars: The Clone Wars",
@@ -91,7 +98,8 @@ export class SeriesComponent implements OnInit {
       "productora": "Lucasfilm",
       "protagonista": "Anakin Skywalker",
       "imagen": "assets/images/series/cloneWars.jpg",
-      "modalId": "cloneWars"
+      "modalId": "cloneWars",
+      "isFavorite": false
       },
       {
       "nombre": "Reacher",
@@ -103,7 +111,8 @@ export class SeriesComponent implements OnInit {
       "productora": "Amazon Prime Video",
       "protagonista": "Alan Ritchson",
       "imagen": "assets/images/series/reacher.jpg",
-      "modalId": "reacher"
+      "modalId": "reacher",
+      "isFavorite": false
       },
       {
       "nombre": "Better Call Saul",
@@ -115,7 +124,8 @@ export class SeriesComponent implements OnInit {
       "productora": "High Bridge Productions",
       "protagonista": "Bob Odenkirk",
       "imagen": "assets/images/series/betterCallSaul.jpg",
-      "modalId": "betterCallSaul"
+      "modalId": "betterCallSaul",
+      "isFavorite": false
       },
       {
       "nombre": "El libro de Boba Fett",
@@ -127,7 +137,8 @@ export class SeriesComponent implements OnInit {
       "productora": "Lucasfilm",
       "protagonista": "Temuera Morrison",
       "imagen": "assets/images/series/bobaFett.jpg",
-      "modalId": "bobaFett"
+      "modalId": "bobaFett",
+      "isFavorite": false
       },
       {
       "nombre": "Star Trek: Picard",
@@ -139,7 +150,8 @@ export class SeriesComponent implements OnInit {
       "productora": "CBS Studios",
       "protagonista": "Patrick Stewart",
       "imagen": "assets/images/series/starTrekPicard.jpg",
-      "modalId": "starTrekPicard"
+      "modalId": "starTrekPicard",
+      "isFavorite": false
       },
       {
       "nombre": "Chicago Fire",
@@ -151,7 +163,8 @@ export class SeriesComponent implements OnInit {
       "productora": "CBS Studios",
       "protagonista": "Taylor Kinney",
       "imagen": "assets/images/series/chicagoFire.jpg",
-      "modalId": "chicagoFire"
+      "modalId": "chicagoFire",
+      "isFavorite": false
       },
       {
       "nombre": "Loki",
@@ -163,7 +176,8 @@ export class SeriesComponent implements OnInit {
       "productora": "Marvel Studios",
       "protagonista": "Tom Hiddleston",
       "imagen": "assets/images/series/loki.jpg",
-      "modalId": "loki"
+      "modalId": "loki",
+      "isFavorite": false
       },
       {
       "nombre": "Suits: La Clave Del Éxito",
@@ -175,7 +189,8 @@ export class SeriesComponent implements OnInit {
       "productora": "USA Network",
       "protagonista": "Gabriel Macht",
       "imagen": "assets/images/series/suits.jpg",
-      "modalId": "suits"
+      "modalId": "suits",
+      "isFavorite": false
       },
       {
       "nombre": "El Juego Del Calamar",
@@ -187,35 +202,64 @@ export class SeriesComponent implements OnInit {
       "productora": "Siren Pictures Inc.",
       "protagonista": "Lee Jung-jae",
       "imagen": "assets/images/series/squidGame.jpg",
-      "modalId": "squidGame"
+      "modalId": "squidGame",
+      "isFavorite": false
       }
   ];
-  constructor(private dbService: NgxIndexedDBService) { }
+  constructor(private dbService: NgxIndexedDBService) {
+    this.comprobarFavorito();
+  }
 
   ngOnInit(): void {
 
   }
 
-  addFavorito(id:any):void{
-    console.log(id)
-    for (let serie of this.series){
-      if (serie.modalId == id){
-        this.dbService.add('favoritos', {
-          nombre: serie.nombre,
-          sinopsis: serie.sinopsis,
-          valoracion: serie.valoracion,
-          youtube: serie.youtube,
-          plataforma: serie.plataforma,
-          director: serie.director,
-          productora: serie.productora,
-          protagonista: serie.protagonista,
-          imagen: serie.imagen,
-          modalId: serie.modalId,
-        }).subscribe((key) => {
-          console.log('Serie: ', key.nombre, 'añadida a favoritos');
-        });
+  comprobarFavorito():void{
+    let favSerie:any;
+    this.dbService.getAll('favoritos').subscribe((favorito) => {
+      for (favSerie of favorito){
+        for (let serie of this.series){
+          if(serie.modalId == favSerie.modalId){
+            serie.isFavorite = true;
+          }
+        }
+      }
+    });
+  }
+
+  gestionFavorito(isFavorite:boolean,id:any):void{
+    if(isFavorite){
+      this.dbService.delete('favoritos', id).subscribe((pelicula) => {
+        console.log(`Serie con id: ${id} eliminada de favoritos`);
+      });
+      for (let serie of this.series){
+        if(serie.modalId == id){
+          serie.isFavorite = false;
+        }
+      }
+    }else{
+      console.log(id)
+      for (let serie of this.series){
+        if (serie.modalId == id){
+          serie.isFavorite == true;
+          this.dbService.add('favoritos', {
+            nombre: serie.nombre,
+            sinopsis: serie.sinopsis,
+            valoracion: serie.valoracion,
+            youtube: serie.youtube,
+            plataforma: serie.plataforma,
+            director: serie.director,
+            productora: serie.productora,
+            protagonista: serie.protagonista,
+            imagen: serie.imagen,
+            modalId: serie.modalId,
+          }).subscribe((key) => {
+            console.log('Serie: ', key.nombre, 'añadida a favoritos');
+          });
+        }
       }
     }
+    this.comprobarFavorito();
   }
 
 }
