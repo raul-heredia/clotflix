@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NgxIndexedDBService,IndexDetails  } from 'ngx-indexed-db';
 @Component({
   selector: 'app-peliculas',
   templateUrl: './peliculas.component.html',
@@ -226,9 +226,32 @@ export class PeliculasComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  constructor(private dbService: NgxIndexedDBService) { }
 
   ngOnInit(): void {
   }
 
+  addFavorito(id:any):void{
+    console.log(id)
+    for (let pelicula of this.peliculas){
+      if (pelicula.modalId == id){
+        console.log("trobat");
+        console.log(pelicula);
+        this.dbService.add('favoritos', {
+          nombre: pelicula.nombre,
+          sinopsis: pelicula.sinopsis,
+          valoracion: pelicula.valoracion,
+          youtube: pelicula.youtube,
+          plataforma: pelicula.plataforma,
+          director: pelicula.director,
+          productora: pelicula.productora,
+          protagonista: pelicula.protagonista,
+          imagen: pelicula.imagen,
+          modalId: pelicula.modalId,
+        }).subscribe((key) => {
+          console.log('key: ', key, 'Added succesfully');
+        });
+      }
+    }
+  }
 }
