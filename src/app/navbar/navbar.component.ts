@@ -15,7 +15,7 @@ import { PeliculasService } from '../peliculas/peliculas-service';
 export class NavbarComponent implements OnInit {
   contenido: any[] = [];
   constructor(private peliculasService: PeliculasService, private seriesService: SeriesService) { }
-
+  textoFiltrar: string = "";
   ngOnInit(): void {
     this.obtenerPeliculas();
     this.obtenerSeries();
@@ -37,4 +37,8 @@ export class NavbarComponent implements OnInit {
       });
   }
 
+  updateFilter(text: string): void {
+    this.textoFiltrar = text;
+    console.log(this.textoFiltrar)
+  }
 }
