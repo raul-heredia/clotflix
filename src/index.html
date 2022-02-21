@@ -29,6 +29,7 @@
     let peliculas = document.getElementById('peliculas');
     let series = document.getElementById('series');
     let milista = document.getElementById('milista');
+    let contacto = document.getElementById('goContact');
     function resetClass() {
       inicio.classList.remove("active");
       peliculas.classList.remove("active");
@@ -54,6 +55,9 @@
     milista.addEventListener('click', () => {
       resetClass();
       milista.classList.add("active");
+    })
+    contacto.addEventListener('click', () => {
+      resetClass();
     })
     jQuery('.modal').on('hidden.bs.modal', function () {
       let idModalClicked = this.id;

@@ -15,6 +15,7 @@ import { OrdenarPerPipe } from './_pipes/ordenar-per.pipe';
 import { FooterComponent } from './footer/footer.component';
 import { MiListaComponent } from './mi-lista/mi-lista.component';
 import { SearchFilterPipe } from './_pipes/search-filter.pipe';
+import { ContactoComponent } from './contacto/contacto.component';
 
 // Ahead of time compiles requires an exported function for factories
 export function migrationFactory() {
@@ -66,6 +67,7 @@ const dbConfig: DBConfig = {
     FooterComponent,
     MiListaComponent,
     SearchFilterPipe,
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,
