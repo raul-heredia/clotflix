@@ -14,7 +14,8 @@ const routes: Routes = [
   { path: 'peliculas', component: PeliculasComponent },
   { path: 'series', component: SeriesComponent },
   { path: 'milista', component: MiListaComponent },
-  { path: 'contacto', component: ContactoComponent }
+  { path: 'contacto', component: ContactoComponent },
+  { path: '**', redirectTo: '' }
 
 ];
 
