@@ -70,6 +70,7 @@ export class PeliculasComponent implements OnInit {
         if (pelicula.modalId == id) {
           pelicula.isFavorite == true;
           this.dbService.add('favoritos', {
+            nombreCompleto: pelicula.nombreCompleto,
             nombre: pelicula.nombre,
             sinopsis: pelicula.sinopsis,
             valoracion: pelicula.valoracion,
@@ -81,7 +82,7 @@ export class PeliculasComponent implements OnInit {
             imagen: pelicula.imagen,
             modalId: pelicula.modalId,
           }).subscribe((key) => {
-            console.log('Pelicula: ', key.nombre, 'añadida a favoritos');
+            console.log('Pelicula: ', key.nombreCompleto, 'añadida a favoritos');
           });
         }
       }

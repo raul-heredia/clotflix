@@ -36,6 +36,7 @@ const dbConfig: DBConfig = {
     store: 'favoritos',
     storeConfig: { keyPath: 'modalId', autoIncrement: false },
     storeSchema: [
+      { name: 'nombreCompleto', keypath: 'nombreCompleto', options: { unique: false } },
       { name: 'nombre', keypath: 'nombre', options: { unique: false } },
       { name: 'sinopsis', keypath: 'sinopsis', options: { unique: false } },
       { name: 'valoracion', keypath: 'valoracion', options: { unique: false } },

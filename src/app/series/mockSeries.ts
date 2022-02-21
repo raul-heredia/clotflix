@@ -2,6 +2,7 @@ import { Serie } from "./serie";
 
 export let series: Serie[] = [
   {
+    nombreCompleto: "The Mandalorian",
     nombre: "The Mandalorian",
     sinopsis: "The Mandalorian tiene lugar «después de la caída del Imperio y antes de la aparición de la Primera Orden», cinco años después de los acontecimientos narrados en Return of the Jedi y sigue a «un pistolero solitario en los confines de la galaxia, lejos de la autoridad de la Nueva República».",
     valoracion: 8.8,
@@ -15,6 +16,7 @@ export let series: Serie[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Peaky Blinders",
     nombre: "Peaky Blinders",
     sinopsis: "Una epopeya familiar de gánsteres ambientada en 1919 en Birmingham, Inglaterra; centrada en una pandilla que cosía cuchillas de afeitar a la visera de sus gorras, y en su feroz jefe Tommy Shelby.",
     valoracion: 8.8,
@@ -28,6 +30,7 @@ export let series: Serie[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Breaking Bad",
     nombre: "Breaking Bad",
     sinopsis: "Walter White (Bryan Cranston) es un frustrado profesor de química en un instituto, padre de un joven discapacitado y con una mujer (Anna Gunn) embarazada. Además, trabaja en un lavadero de vehículos por las tardes. Cuando le diagnostican un cáncer pulmonar terminal se plantea qué pasará con su familia cuando él muera.",
     valoracion: 9.4,
@@ -41,6 +44,7 @@ export let series: Serie[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Star Trek: Discovery",
     nombre: "Star Trek: Discovery",
     sinopsis: "Diez años antes que Kirk, Spock y la Enterprise, el USS Discovery descubre nuevos mundos y formas de vida a medida que un oficial de la Flota estelar aprende a comprender todas las cosas extrañas.",
     valoracion: 7.1,
@@ -54,6 +58,7 @@ export let series: Serie[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Lucifer",
     nombre: "Lucifer",
     sinopsis: "Lucifer Morningstar ha decidido que está harto de ser un sirviente obediente en el Infierno y decide pasar un tiempo en la Tierra para entender mejor a la humanidad. Se instala en Los Ángeles, la ciudad de los ángeles.",
     valoracion: 9.2,
@@ -67,6 +72,7 @@ export let series: Serie[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Star Wars: The Clone Wars",
     nombre: "Star Wars: The Clone Wars",
     sinopsis: "Yoda, Mace Windu, Obi-Wan Kenobi, Anakin Skywalker y otros caballeros jedi dirigen el gran ejército de la República contra el ejército droide de los Separatistas.",
     valoracion: 8.7,
@@ -80,6 +86,7 @@ export let series: Serie[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Reacher",
     nombre: "Reacher",
     sinopsis: "Cuando el policía militar retirado Jack Reacher es arrestado por un asesinato que no cometió, se encuentra en medio de una conspiración mortal llena de policías sucios, empresarios turbios y políticos intrigantes.",
     valoracion: 8.4,
@@ -93,6 +100,7 @@ export let series: Serie[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Better Call Saul",
     nombre: "Better Call Saul",
     sinopsis: "Los juicios y tribulaciones del abogado criminal, Jimmy McGill, en la época previa al establecimiento de su cutre despacho de abogados en Albuquerque, Nuevo México.",
     valoracion: 8.8,
@@ -106,6 +114,7 @@ export let series: Serie[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "El libro de Boba Fett",
     nombre: "El libro de Boba Fett",
     sinopsis: "Boba Fett deja de ser un simple cazarrecompensas para reinventarse en Tatooine junto a Fennec Shand.",
     valoracion: 7.6,
@@ -119,6 +128,7 @@ export let series: Serie[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Star Trek: Picard",
     nombre: "Star Trek: Picard",
     sinopsis: "Continuación de Star Trek: la nueva generación (1987), centrada en el Capitán Picard y el siguiente capítulo de su vida.",
     valoracion: 7.5,
@@ -132,6 +142,7 @@ export let series: Serie[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Chicago Fire",
     nombre: "Chicago Fire",
     sinopsis: "La historia de los bomberos en Chicago, tanto a nivel personal como profesional.",
     valoracion: 8.0,
@@ -145,6 +156,7 @@ export let series: Serie[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Loki",
     nombre: "Loki",
     sinopsis: "El villano Loki retoma su papel de Dios del Engaño tras los acontecimientos de \"Vengadores: Endgame\".",
     valoracion: 8.3,
@@ -158,6 +170,7 @@ export let series: Serie[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Suits: La Clave Del Éxito",
     nombre: "Suits: La Clave Del Éxito",
     sinopsis: "A la fuga después de que un negocio de drogas saliera mal, Mike Ross, un hombre brillante a pesar de no haber acabado sus estudios, se encuentra trabajando con Harvey Specter, uno de los mejores abogados de la ciudad de Nueva York.",
     valoracion: 8.4,
@@ -171,6 +184,7 @@ export let series: Serie[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "El Juego Del Calamar",
     nombre: "El Juego Del Calamar",
     sinopsis: "456 participantes desesperados compiten en un misterioso y mortífero concurso de supervivencia compuesto de varias rondas de juegos infantiles. ¿La meta? Ganar 45.600 millones de wones y salir de la miseria.",
     valoracion: 8.0,

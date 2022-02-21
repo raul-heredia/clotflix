@@ -23,13 +23,14 @@
         </li>
       </ul>
       <div class="d-flex">
+        <div class="dropdown-menu" [ngClass]="textoFiltrar ? 'show' : 'hidden'">
+          <a class="dropdown-item" [ngClass]="resultado.isFavorite ? 'favorito' : ''" data-bs-toggle="modal"
+            [attr.data-bs-target]="'#' + resultado.modalId"
+            *ngFor="let resultado of contenido | searchFilter: textoFiltrar">{{resultado.nombre}}</a>
+        </div>
         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"
           [(ngModel)]="textoFiltrar" (keyup)="updateFilter(texto.value)" #texto>
         <button class="btn" type="submit"><i class="bi bi-search"></i></button>
-        <div class="dropdown-menu" [ngClass]="textoFiltrar ? 'show' : 'hidden'">
-          <a class="dropdown-item" data-bs-toggle="modal" [attr.data-bs-target]="'#' + resultado.modalId"
-            *ngFor="let resultado of contenido | searchFilter: textoFiltrar">{{resultado.nombre}}</a>
-        </div>
       </div>
     </div>
   </div>

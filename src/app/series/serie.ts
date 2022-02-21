@@ -1,4 +1,5 @@
-export interface Serie{
+export interface Serie {
+  nombreCompleto: string,
   nombre: string,
   sinopsis: string,
   valoracion: number,

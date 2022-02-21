@@ -2,6 +2,7 @@ import { Pelicula } from "./pelicula";
 
 export let peliculas: Pelicula[] = [
   {
+    nombreCompleto: "El Señor de los Anillos: La Comunidad del Anillo",
     nombre: "La Comunidad del Anillo",
     sinopsis: "Un hobbit de la Comarca y ocho compañeros emprenden un viaje para destruir el poderoso Anillo Único y salvar la Tierra Media del Señor Oscuro Sauron.",
     valoracion: 8.8,
@@ -15,6 +16,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "El Señor de los Anillos: Las Dos Torres",
     nombre: "Las Dos Torres",
     sinopsis: "Mientras Frodo y Sam se acercan a Mordor con la ayuda del astuto Gollum, la comunidad dividida se enfrenta al nuevo aliado de Sauron, Saruman, y a sus hordas de Isengard.",
     valoracion: 8.7,
@@ -28,6 +30,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "El Señor de los Anillos: El Retorno del Rey",
     nombre: "El Retorno del Rey",
     sinopsis: "Gandalf y Aragorn lideran el mundo de los hombres contra la armada de Sauron para distraer su atención de Frodo y Sam, quienes se aproximan al Monte del Destino con el Anillo Único.",
     valoracion: 9.7,
@@ -41,6 +44,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Vengadores: Infinity War",
     nombre: "Vengadores: Infinity War",
     sinopsis: "Los Vengadores y sus aliados estarán dispuestos a sacrificarlo todo para derrotar al poderoso Thanos antes de que su devastación y ruina ponga fin al universo.",
     valoracion: 8.4,
@@ -54,6 +58,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Corazones de acero",
     nombre: "Corazones de acero",
     sinopsis: "Un comandante de tanques toma decisiones difíciles mientras él y su equipo se abren paso a través de Alemania en abril de 1945.",
     valoracion: 7.6,
@@ -67,6 +72,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Dunkerque",
     nombre: "Dunkerque",
     sinopsis: "Los soldados aliados de Bélgica, el Imperio Británico y Francia están rodeados por el ejército alemán y son evacuados durante una feroz batalla en la Segunda Guerra Mundial.",
     valoracion: 7.8,
@@ -80,6 +86,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "El Renacido",
     nombre: "El Renacido",
     sinopsis: "Un hombre de la frontera que participa en una expedición de comercio de pieles en la década de 1820 lucha por sobrevivir después de ser mutilado por un oso y dado por muerto por los miembros de su propio equipo de caza.",
     valoracion: 8.0,
@@ -93,6 +100,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Star Wars: La Amenaza Fantasma",
     nombre: "La Amenaza Fantasma",
     sinopsis: "Dos caballeros jedi escapan de un bloqueo hostil para ir en busca de aliados y conocen a un joven que podría restaurar el equilibrio en la Fuerza. Pero los previamente inactivos sith resurgen para reclamar su antigua gloria.",
     valoracion: 7.5,
@@ -106,6 +114,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Star Wars: El Ataque De Los Clones",
     nombre: "El Ataque De Los Clones",
     sinopsis: "Tras diez años de su primer encuentro, Anakin Skywalker y Padmé Amidala disfrutan de un romance prohibido, mientras Obi-Wan Kenobi investiga el intento de asesinato de un senador y descubre una armada secreta de clones creada por los jedi.",
     valoracion: 7.5,
@@ -119,6 +128,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Star Wars: La venganza de los sith",
     nombre: "La venganza de los sith",
     sinopsis: "Tras tres años de Guerras Clon, los jedi rescatan a Palpatine del Conde Dooku. Mientras Obi-Wan persigue una nueva amenaza, Anakin actúa como agente doble entre el Consejo Jedi y Palpatine, siendo atraído por un siniestro plan.",
     valoracion: 9.5,
@@ -132,6 +142,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Han Solo: Una Historia de Star Wars",
     nombre: "Han Solo",
     sinopsis: "Durante una aventura en el mundo clandestino del crimen, Han Solo conoce a su futuro copiloto Chewbacca y a Lando Calrissian años antes de unirse a la Rebelión.",
     valoracion: 7.6,
@@ -145,6 +156,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Rogue One: Una Historia de Star Wars",
     nombre: "Rogue One",
     sinopsis: "La hija de un científico imperial se une a la Alianza Rebelde en una arriesgada jugada para robar los planos de la Estrella de la Muerte.",
     valoracion: 8.2,
@@ -158,6 +170,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Star Wars: Una nueva esperanza",
     nombre: "Una nueva esperanza",
     sinopsis: "Luke Skywalker une sus fuerzas con un caballero jedi, un piloto fanfarrón, un wookiee y dos droides para salvar a la galaxia de la estación espacial del Imperio, a la vez que intenta rescatar a la princesa Leia del malvado Darth Vader.",
     valoracion: 8.6,
@@ -171,6 +184,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Star Wars: El Imperio contraataca",
     nombre: "El Imperio contraataca",
     sinopsis: "Tras ser brutalmente dominados los rebeldes por el Imperio en el planeta helado Hoth, Luke Skywalker comienza su entrenamiento jedi con Yoda, mientras sus amigos son perseguidos por Darth Vader y el cazarrecompensas Boba Fett.",
     valoracion: 9.7,
@@ -184,6 +198,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Star Wars: El retorno del jedi",
     nombre: "El retorno del jedi",
     sinopsis: "Tras rescatar a Han Solo de Jabba el Hutt, los rebeldes se dirigen a Endor para destruir la segunda Estrella de la Muerte. Mientras tanto, Luke intenta ayudar a Darth Vader a volver del lado oscuro sin caer en la trampa del Emperador.",
     valoracion: 9.3,
@@ -197,6 +212,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Fast & Furious 5",
     nombre: "Fast & Furious 5",
     sinopsis: "Dominic Toretto y su equipo de corredores callejeros planean un atraco masivo para comprar su libertad mientras están en la mira de un poderoso narcotraficante brasileño y un peligroso agente federal.",
     valoracion: 7.3,
@@ -210,6 +226,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
+    nombreCompleto: "Fast & Furious 9",
     nombre: "Fast & Furious 9",
     sinopsis: "Dom y su equipo se enfrentan a un terrorista internacional que resulta ser el hermano de Dom y Mia, con el que no tienen relación.",
     valoracion: 5.2,

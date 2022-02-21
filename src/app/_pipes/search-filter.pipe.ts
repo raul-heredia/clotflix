@@ -9,7 +9,7 @@ export class SearchFilterPipe implements PipeTransform {
     let texto = textSearch;
     let filteredArray = [];
     if (array) {
-      filteredArray = array.filter((a) => a.nombre.toLowerCase().includes(texto.toLowerCase()) || a.plataforma.toLowerCase().startsWith(texto.toLowerCase()) || a.director.toLowerCase().startsWith(texto.toLowerCase()) || a.productora.toLowerCase().startsWith(texto.toLowerCase()));
+      filteredArray = array.filter((a) => a.nombreCompleto.toLowerCase().includes(texto.toLowerCase()) || a.plataforma.toLowerCase().startsWith(texto.toLowerCase()) || a.director.toLowerCase().startsWith(texto.toLowerCase()) || a.productora.toLowerCase().startsWith(texto.toLowerCase()));
     }
     return filteredArray;
   }

@@ -39,21 +39,30 @@ a.nav-link:hover{
   color: $darkRed !important;
 }
 
-.dropdown-menu
-{
-  margin-top: 30px;
+.dropdown-menu{
+  background-color: lighten($bg-color, 5);
+  width: auto;
+  margin-top: 40px;
+  margin-left: -4px;
+  border-radius: $small-radius;
 }
 
 .dropdown-item{
+  font-weight: bold;
   cursor: pointer;
+  color: $grey;
 }
 .dropdown-item:hover{
   text-decoration: none;
+  background-color: rgba($nav-color, .5);
 }
-
 .hidden{
   display: none;
 }
 .show{
   display: block;
+}
+
+.favorito::after{
+  content: " ❤️"
 }

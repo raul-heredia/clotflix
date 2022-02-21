@@ -1,4 +1,5 @@
-export interface Pelicula{
+export interface Pelicula {
+  nombreCompleto: string,
   nombre: string,
   sinopsis: string,
   valoracion: number,

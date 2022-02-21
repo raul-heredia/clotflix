@@ -68,6 +68,7 @@ export class SeriesComponent implements OnInit {
         if (serie.modalId == id) {
           serie.isFavorite == true;
           this.dbService.add('favoritos', {
+            nombreCompleto: serie.nombreCompleto,
             nombre: serie.nombre,
             sinopsis: serie.sinopsis,
             valoracion: serie.valoracion,
@@ -79,7 +80,7 @@ export class SeriesComponent implements OnInit {
             imagen: serie.imagen,
             modalId: serie.modalId,
           }).subscribe((key) => {
-            console.log('Serie: ', key.nombre, 'añadida a favoritos');
+            console.log('Serie: ', key.nombreCompleto, 'añadida a favoritos');
           });
         }
       }
