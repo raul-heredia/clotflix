@@ -22,8 +22,8 @@
           <a class="nav-link" id="milista" routerLink="/milista">Mi Lista</a>
         </li>
       </ul>
-      <div class="d-flex">
-        <div class="dropdown-menu" [ngClass]="textoFiltrar ? 'show' : 'hidden'">
+      <div  class="d-flex">
+        <div  class="dropdown-menu" [ngClass]="textoFiltrar ? 'show' : 'hidden'">
           <a class="dropdown-item" [ngClass]="resultado.isFavorite ? 'favorito' : ''" data-bs-toggle="modal"
             [attr.data-bs-target]="'#' + resultado.modalId"
             *ngFor="let resultado of contenido | searchFilter: textoFiltrar">{{resultado.nombre}}</a>

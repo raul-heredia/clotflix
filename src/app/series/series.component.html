@@ -1,5 +1,5 @@
 <div class="ordenSelect d-flex align-items-stretch justify-content-center flex-wrap">
-  <select class="form-select" aria-label="Ordenar Por" [(ngModel)]="selectFiltroSerie" name="selectFiltroSerie">
+  <select  @arriba class="form-select" aria-label="Ordenar Por" [(ngModel)]="selectFiltroSerie" name="selectFiltroSerie">
     <option selected disabled value="!">Ordenar Por</option>
     <option [ngValue]="filter.nombreAsc">Nombre Ascendente</option>
     <option [ngValue]="filter.nombreDesc">Nombre Descendente</option>
@@ -13,8 +13,8 @@
     <option [ngValue]="filter.protagonistaDesc">Protagonista Descendente</option>
   </select>
 </div>
-<div class="d-flex align-items-stretch justify-content-center flex-wrap">
-  <div @fade class="card" style="width: 18rem;" *ngFor="let serie of series | ordenarPer: selectFiltroSerie">
+<div @fade-opacity class="d-flex align-items-stretch justify-content-center flex-wrap">
+  <div  class="card" style="width: 18rem;" *ngFor="let serie of series | ordenarPer: selectFiltroSerie">
     <img class="card-img-top" src="{{serie.imagen}}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{serie.nombre}}</h5>

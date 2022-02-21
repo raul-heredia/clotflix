@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { trigger,  state, style, animate, transition} from '@angular/animations';
 // Series
 import { Serie } from '../series/serie';
 import { series } from '../series/mockSeries';
@@ -10,7 +11,16 @@ import { PeliculasService } from '../peliculas/peliculas-service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  styleUrls: ['./navbar.component.scss'],
+  animations: [
+    trigger('fade-top', [ 
+       transition('void => *', [
+        style({ opacity:0,transform: 'translateY(-100%)' }),
+        animate(1000)
+      ]) 
+    ]),
+  ]
+  
 })
 export class NavbarComponent implements OnInit {
   contenido: any[] = [];

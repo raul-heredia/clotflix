@@ -1,5 +1,5 @@
 <div class="ordenSelect d-flex align-items-stretch justify-content-center flex-wrap">
-  <select class="form-select" aria-label="Ordenar Por" [(ngModel)]="selectFiltroMiLista" name="selectFiltroPelicula">
+  <select @fade-top class="form-select" aria-label="Ordenar Por" [(ngModel)]="selectFiltroMiLista" name="selectFiltroPelicula">
     <option selected disabled value="!">Ordenar Por</option>
     <option [ngValue]="filter.nombreAsc">Nombre Ascendente</option>
     <option [ngValue]="filter.nombreDesc">Nombre Descendente</option>
@@ -14,7 +14,7 @@
   </select>
 </div>
 <div class="d-flex align-items-stretch justify-content-center flex-wrap">
-  <div class="card" style="width: 18rem;" *ngFor="let favorito of miLista | ordenarPer: selectFiltroMiLista">
+  <div @fade-left class="card" style="width: 18rem;" *ngFor="let favorito of miLista | ordenarPer: selectFiltroMiLista">
     <img class=" card-img-top" src="{{favorito.imagen}}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{favorito.nombre}}</h5>

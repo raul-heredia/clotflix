@@ -12,8 +12,14 @@ import {trigger, style, animate, transition} from '@angular/animations';
   animations: [
     trigger('fade', [ 
       transition('void => *', [
-        style({ left: -1050 }), 
-        animate(2000, style({left: 0}))
+        style({ opacity: 0 }), 
+        animate(2000, style({opacity: 1}))
+      ])
+    ]),
+    trigger('arriba', [ 
+      transition('void => *', [
+        style({ opacity:0,transform: 'translateY(-300%)' }),
+        animate(1000)
       ]) 
     ])
   ]
