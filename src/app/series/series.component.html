@@ -14,7 +14,7 @@
   </select>
 </div>
 <div class="d-flex align-items-stretch justify-content-center flex-wrap">
-  <div class="card" style="width: 18rem;" *ngFor="let serie of series | ordenarPer: selectFiltroSerie">
+  <div @fade class="card" style="width: 18rem;" *ngFor="let serie of series | ordenarPer: selectFiltroSerie">
     <img class="card-img-top" src="{{serie.imagen}}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{serie.nombre}}</h5>
@@ -30,9 +30,10 @@
         [attr.data-bs-target]="'#' + serie.modalId">
         Más Información
       </button>
-      <button type="button" class="btn" (click)="gestionFavorito(serie.isFavorite,serie.modalId)">
+      <button  type="button" class="btn" (click)="gestionFavorito(serie.isFavorite,serie.modalId)">
         <i [ngClass]="serie.isFavorite ? 'bi bi-heart-fill' : 'bi bi-heart'"></i>
       </button>
+      
     </div>
     <!-- Modal -->
     <div class="modal fade" id="{{serie.modalId}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

@@ -13,9 +13,9 @@
     <option [ngValue]="filter.protagonistaDesc">Protagonista Descendente</option>
   </select>
 </div>
-<div class="d-flex align-items-stretch justify-content-center flex-wrap">
-  <div class="card" style="width: 18rem;" *ngFor="let pelicula of peliculas | ordenarPer: selectFiltroPelicula">
-    <img class="card-img-top" src="{{pelicula.imagen}}" alt="Card image cap">
+<div  class="d-flex align-items-stretch justify-content-center flex-wrap">
+  <div  @fade class="card" style="width: 18rem;" *ngFor="let pelicula of peliculas | ordenarPer: selectFiltroPelicula">
+    <img  class="card-img-top" src="{{pelicula.imagen}}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{pelicula.nombre}}</h5>
     </div>

@@ -3,10 +3,20 @@ import { NgxIndexedDBService, IndexDetails } from 'ngx-indexed-db';
 import { Pelicula } from './pelicula';
 import { peliculas } from './mockPeliculas';
 import { PeliculasService } from './peliculas-service';
+import {trigger, style, animate, transition} from '@angular/animations';
+
 @Component({
   selector: 'app-peliculas',
   templateUrl: './peliculas.component.html',
-  styleUrls: ['./peliculas.component.scss']
+  styleUrls: ['./peliculas.component.scss'],
+  animations: [
+    trigger('fade', [ 
+      transition('void => *', [
+        style({ left: -1050 }), 
+        animate(2000, style({left: 0}))
+      ]) 
+    ])
+  ]
 })
 
 export class PeliculasComponent implements OnInit {
@@ -32,6 +42,7 @@ export class PeliculasComponent implements OnInit {
   ngOnInit(): void {
     this.comprobarFavorito();
     this.obtenerPeliculas();
+    this.guardarSessionStorage();
   }
 
   obtenerPeliculas(): void {
@@ -88,5 +99,10 @@ export class PeliculasComponent implements OnInit {
       }
     }
     this.comprobarFavorito();
+  }
+  guardarSessionStorage(){
+    for(let pelicula of this.peliculas){
+      sessionStorage.setItem(pelicula.modalId,pelicula.nombreCompleto);
+    }
   }
 }

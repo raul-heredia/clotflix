@@ -3,10 +3,21 @@ import { NgxIndexedDBService, IndexDetails } from 'ngx-indexed-db';
 import { Serie } from './serie';
 import { series } from './mockSeries';
 import { SeriesService } from './series-service';
+import { trigger,  state, style, animate, transition} from '@angular/animations';
+
+
 @Component({
   selector: 'app-series',
   templateUrl: './series.component.html',
   styleUrls: ['./series.component.scss'],
+  animations: [
+    trigger('fade', [ 
+      transition('void => *', [
+        style({ left: 2050, opacity: 0 }), 
+        animate(2000, style({left: 0, opacity: 1}))
+      ]) 
+    ])
+  ]
 })
 
 export class SeriesComponent implements OnInit {
@@ -32,6 +43,7 @@ export class SeriesComponent implements OnInit {
   ngOnInit(): void {
     this.obtenerSeries();
     this.comprobarFavorito();
+    this.guardarSessionStorage();
   }
 
   obtenerSeries(): void {
@@ -87,5 +99,9 @@ export class SeriesComponent implements OnInit {
     }
     this.comprobarFavorito();
   }
-
+  guardarSessionStorage(){
+    for(let serie of this.series){
+      sessionStorage.setItem(serie.modalId,serie.nombreCompleto);
+    }
+  }
 }

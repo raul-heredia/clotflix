@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // IndexedDB
 import { NgxIndexedDBModule, DBConfig } from 'ngx-indexed-db';
 // COMPONENTS
@@ -16,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MiListaComponent } from './mi-lista/mi-lista.component';
 import { SearchFilterPipe } from './_pipes/search-filter.pipe';
 import { ContactoComponent } from './contacto/contacto.component';
+
 
 // Ahead of time compiles requires an exported function for factories
 export function migrationFactory() {
@@ -72,6 +74,7 @@ const dbConfig: DBConfig = {
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     FormsModule,
     NgxIndexedDBModule.forRoot(dbConfig)
   ],

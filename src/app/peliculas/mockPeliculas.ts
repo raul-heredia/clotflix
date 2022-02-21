@@ -128,8 +128,8 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
-    nombreCompleto: "Star Wars: Episodio III - La venganza de los sith",
-    nombre: "La venganza de los sith",
+    nombreCompleto: "Star Wars: Episodio III - La Venganza de los Sith",
+    nombre: "La Venganza de los Sith",
     sinopsis: "Tras tres años de Guerras Clon, los jedi rescatan a Palpatine del Conde Dooku. Mientras Obi-Wan persigue una nueva amenaza, Anakin actúa como agente doble entre el Consejo Jedi y Palpatine, siendo atraído por un siniestro plan.",
     valoracion: 9.5,
     youtube: "https://www.youtube.com/embed/kqkfjBKmWc4",
@@ -170,8 +170,8 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
-    nombreCompleto: "Star Wars: Episodio IV - Una nueva esperanza",
-    nombre: "Una nueva esperanza",
+    nombreCompleto: "Star Wars: Episodio IV - Una Nueva Esperanza",
+    nombre: "Una Nueva Esperanza",
     sinopsis: "Luke Skywalker une sus fuerzas con un caballero jedi, un piloto fanfarrón, un wookiee y dos droides para salvar a la galaxia de la estación espacial del Imperio, a la vez que intenta rescatar a la princesa Leia del malvado Darth Vader.",
     valoracion: 8.6,
     youtube: "https://www.youtube.com/embed/beAH5vea99k",
@@ -184,8 +184,8 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
-    nombreCompleto: "Star Wars: Episodio V - El Imperio contraataca",
-    nombre: "El Imperio contraataca",
+    nombreCompleto: "Star Wars: Episodio V - El Imperio Contraataca",
+    nombre: "El Imperio Contraataca",
     sinopsis: "Tras ser brutalmente dominados los rebeldes por el Imperio en el planeta helado Hoth, Luke Skywalker comienza su entrenamiento jedi con Yoda, mientras sus amigos son perseguidos por Darth Vader y el cazarrecompensas Boba Fett.",
     valoracion: 9.7,
     youtube: "https://www.youtube.com/embed/xr3hPFJAHO4",
@@ -198,8 +198,8 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
-    nombreCompleto: "Star Wars: Episodio VI - El retorno del jedi",
-    nombre: "El retorno del jedi",
+    nombreCompleto: "Star Wars: Episodio VI - El Retorno del Jedi",
+    nombre: "El Retorno del Jedi",
     sinopsis: "Tras rescatar a Han Solo de Jabba el Hutt, los rebeldes se dirigen a Endor para destruir la segunda Estrella de la Muerte. Mientras tanto, Luke intenta ayudar a Darth Vader a volver del lado oscuro sin caer en la trampa del Emperador.",
     valoracion: 9.3,
     youtube: "https://www.youtube.com/embed/yhuKapE-Bio",
@@ -239,4 +239,18 @@ export let peliculas: Pelicula[] = [
     modalId: "fastnine",
     isFavorite: false
   },
+  {
+    nombreCompleto: "Interstellar",
+    nombre: "Interstellar",
+    sinopsis: "Un equipo de exploradores viaja a través de un agujero de gusano en el espacio en un intento de garantizar la supervivencia de la humanidad.",
+    valoracion: 9.8,
+    youtube: "https://www.youtube.com/embed/UoSSbmD9vqc",
+    plataforma: "Apple TV+",
+    director: "Christopher Nolan",
+    productora: "	Paramount Pictures",
+    protagonista: "Matthew McConaughey",
+    imagen: "assets/images/peliculas/interstellar.jpg",
+    modalId: "interstellar",
+    isFavorite: false
+  }
 ];
