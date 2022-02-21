@@ -12,8 +12,8 @@ import { PeliculasService } from './peliculas-service';
 export class PeliculasComponent implements OnInit {
   selectFiltroPelicula: any = "!"; // la seleccion del filtro, por defecto es como viene ordenado en el array series
   filter = {
-    nombreAsc: "nombre",
-    nombreDesc: "!nombre",
+    nombreAsc: "nombreCompleto",
+    nombreDesc: "!nombreCompleto",
     valoracionAsc: "valoracion",
     valoracionDesc: "!valoracion",
     plataformaAsc: "plataforma",

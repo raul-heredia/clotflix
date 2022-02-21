@@ -13,8 +13,8 @@ export class SeriesComponent implements OnInit {
 
   selectFiltroSerie: any = "!"; // la seleccion del filtro, por defecto es como viene ordenado en el array series
   filter = {
-    nombreAsc: "nombre",
-    nombreDesc: "!nombre",
+    nombreAsc: "nombreCompleto",
+    nombreDesc: "!nombreCompleto",
     valoracionAsc: "valoracion",
     valoracionDesc: "!valoracion",
     plataformaAsc: "plataforma",

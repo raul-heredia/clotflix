@@ -100,7 +100,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
-    nombreCompleto: "Star Wars: La Amenaza Fantasma",
+    nombreCompleto: "Star Wars: Episodio I - La Amenaza Fantasma",
     nombre: "La Amenaza Fantasma",
     sinopsis: "Dos caballeros jedi escapan de un bloqueo hostil para ir en busca de aliados y conocen a un joven que podría restaurar el equilibrio en la Fuerza. Pero los previamente inactivos sith resurgen para reclamar su antigua gloria.",
     valoracion: 7.5,
@@ -114,7 +114,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
-    nombreCompleto: "Star Wars: El Ataque De Los Clones",
+    nombreCompleto: "Star Wars: Episodio II - El Ataque De Los Clones",
     nombre: "El Ataque De Los Clones",
     sinopsis: "Tras diez años de su primer encuentro, Anakin Skywalker y Padmé Amidala disfrutan de un romance prohibido, mientras Obi-Wan Kenobi investiga el intento de asesinato de un senador y descubre una armada secreta de clones creada por los jedi.",
     valoracion: 7.5,
@@ -128,7 +128,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
-    nombreCompleto: "Star Wars: La venganza de los sith",
+    nombreCompleto: "Star Wars: Episodio III - La venganza de los sith",
     nombre: "La venganza de los sith",
     sinopsis: "Tras tres años de Guerras Clon, los jedi rescatan a Palpatine del Conde Dooku. Mientras Obi-Wan persigue una nueva amenaza, Anakin actúa como agente doble entre el Consejo Jedi y Palpatine, siendo atraído por un siniestro plan.",
     valoracion: 9.5,
@@ -170,7 +170,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
-    nombreCompleto: "Star Wars: Una nueva esperanza",
+    nombreCompleto: "Star Wars: Episodio IV - Una nueva esperanza",
     nombre: "Una nueva esperanza",
     sinopsis: "Luke Skywalker une sus fuerzas con un caballero jedi, un piloto fanfarrón, un wookiee y dos droides para salvar a la galaxia de la estación espacial del Imperio, a la vez que intenta rescatar a la princesa Leia del malvado Darth Vader.",
     valoracion: 8.6,
@@ -184,7 +184,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
-    nombreCompleto: "Star Wars: El Imperio contraataca",
+    nombreCompleto: "Star Wars: Episodio V - El Imperio contraataca",
     nombre: "El Imperio contraataca",
     sinopsis: "Tras ser brutalmente dominados los rebeldes por el Imperio en el planeta helado Hoth, Luke Skywalker comienza su entrenamiento jedi con Yoda, mientras sus amigos son perseguidos por Darth Vader y el cazarrecompensas Boba Fett.",
     valoracion: 9.7,
@@ -198,7 +198,7 @@ export let peliculas: Pelicula[] = [
     isFavorite: false
   },
   {
-    nombreCompleto: "Star Wars: El retorno del jedi",
+    nombreCompleto: "Star Wars: Episodio VI - El retorno del jedi",
     nombre: "El retorno del jedi",
     sinopsis: "Tras rescatar a Han Solo de Jabba el Hutt, los rebeldes se dirigen a Endor para destruir la segunda Estrella de la Muerte. Mientras tanto, Luke intenta ayudar a Darth Vader a volver del lado oscuro sin caer en la trampa del Emperador.",
     valoracion: 9.3,
