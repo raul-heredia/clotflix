@@ -46,8 +46,8 @@ export class PeliculasComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.comprobarFavorito();
     this.obtenerPeliculas();
+    this.comprobarFavorito();
     this.guardarSessionStorage();
   }
 
